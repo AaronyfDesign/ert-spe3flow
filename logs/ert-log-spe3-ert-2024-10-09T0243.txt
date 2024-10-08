@@ -1,0 +1,77 @@
+2024-10-09 02:43:33,200 - root - MainThread - DEBUG - ERT Plugin manager:
+	ert.shared.hook_implementations
+		<HookCaller 'help_links'>
+		<HookCaller 'installable_jobs'>
+		<HookCaller 'installable_workflow_jobs'>
+		<HookCaller 'job_documentation'>
+		<HookCaller 'legacy_ertscript_workflow'>
+		<HookCaller 'site_config_lines'>
+
+2024-10-09 02:43:33,200 - root - MainThread - DEBUG - Creating temporary directory for site-config
+2024-10-09 02:43:33,200 - root - MainThread - DEBUG - Temporary directory created: /tmp/tmpb8711ra5
+2024-10-09 02:43:33,200 - root - MainThread - DEBUG - Got no ecl100 config path from any plugins
+2024-10-09 02:43:33,201 - root - MainThread - DEBUG - Got no ecl300 config path from any plugins
+2024-10-09 02:43:33,201 - root - MainThread - DEBUG - Got no flow config path from any plugins
+2024-10-09 02:43:33,201 - root - MainThread - DEBUG - Got no rms config path from any plugins
+2024-10-09 02:43:33,206 - root - MainThread - DEBUG - Creating temporary site-config
+2024-10-09 02:43:33,206 - root - MainThread - DEBUG - Temporary site-config created: /tmp/tmpb8711ra5/site-config
+2024-10-09 02:43:33,206 - root - MainThread - DEBUG - Setting environment variable ERT_SITE_CONFIG=/tmp/tmpb8711ra5/site-config
+2024-10-09 02:43:33,207 - ert.__main__ - MainThread - INFO - Running ert with Namespace(config='spe3.ert', feature_scheduler=None, func=<function run_gui_wrapper at 0x7f111215cca0>, logdir='./logs', mode='gui', read_only=False, verbose=False)
+2024-10-09 02:43:33,976 - ert.config.ert_config - MainThread - INFO - Content of the configuration file (spe3.ert):
+QUEUE_SYSTEM LOCAL
+QUEUE_OPTION LOCAL MAX_RUNNING 4
+RUNPATH spe3_out/realization-<IENS>/iter-<ITER>
+NUM_REALIZATIONS 12
+ECLBASE SPE3
+SUMMARY FOPR WOPT:PROD
+OBS_CONFIG obs.txt
+GEN_KW FIELD_PROPERTIES field_properties_priors
+
+2024-10-09 02:43:33,976 - ert.config.ert_config - MainThread - INFO - Content of the config_dict: {'DEFINE': [['<CONFIG_PATH>', '/home/aaronyf/download/ert/ert-spe3flow'], ['<CONFIG_FILE_BASE>', 'spe3'], ['<DATE>', '2024-10-09'], ['<CWD>', '/home/aaronyf/download/ert/ert-spe3flow'], ['<CONFIG_FILE>', 'spe3.ert']], 'JOB_SCRIPT': 'job_dispatch.py', 'QUEUE_SYSTEM': <QueueSystem.LOCAL: 'LOCAL'>, 'QUEUE_OPTION': [[<QueueSystem.LOCAL: 'LOCAL'>, 'MAX_RUNNING', '1'], [<QueueSystem.LOCAL: 'LOCAL'>, 'MAX_RUNNING', '4']], 'INSTALL_JOB': [['delete_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/delete_file'], ['careful_copy_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/careful_copy_file'], ['delete_directory', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/delete_directory'], ['copy_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/copy_file'], ['copy_directory', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/copy_directory'], ['make_symlink', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/make_symlink'], ['symlink', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/symlink'], ['move_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/move_file'], ['make_directory', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/make_directory'], ['eclipse300', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/eclipse300'], ['flow', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/flow'], ['eclipse100', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/eclipse100'], ['rms', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/rms'], ['template_render', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/templating/template_render'], ['MAKE_DIRECTORY', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/MAKE_DIRECTORY'], ['MAKE_SYMLINK', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/MAKE_SYMLINK'], ['MOVE_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/MOVE_FILE'], ['ECLIPSE300', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/ECLIPSE300'], ['DELETE_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/DELETE_FILE'], ['SYMLINK', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/SYMLINK'], ['ECLIPSE100', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/ECLIPSE100'], ['COPY_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/COPY_FILE'], ['FLOW', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/FLOW'], ['TEMPLATE_RENDER', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/TEMPLATE_RENDER'], ['DELETE_DIRECTORY', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/DELETE_DIRECTORY'], ['COPY_DIRECTORY', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/COPY_DIRECTORY'], ['RMS', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/RMS'], ['CAREFUL_COPY_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/CAREFUL_COPY_FILE']], 'RUNPATH': '/home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-<IENS>/iter-<ITER>', 'NUM_REALIZATIONS': 12, 'ECLBASE': 'SPE3', 'SUMMARY': [['FOPR', 'WOPT:PROD']], 'OBS_CONFIG': '/home/aaronyf/download/ert/ert-spe3flow/obs.txt', 'GEN_KW': [['FIELD_PROPERTIES', '/home/aaronyf/download/ert/ert-spe3flow/field_properties_priors']]}
+2024-10-09 02:43:33,977 - ert.config.ensemble_config - MainThread - INFO - Adding GenKwConfig config (of size 3) to parameter_configs
+2024-10-09 02:43:34,101 - ert.gui.main - MainThread - INFO - Config contains forward model step TEMPLATE_RENDER
+2024-10-09 02:43:34,101 - ert.gui.main - MainThread - INFO - Config contains forward model step FLOW
+2024-10-09 02:43:34,159 - ert.shared.exporter - MainThread - ERROR - Export not available because CSV_EXPORT2 is not installed.
+2024-10-09 02:43:37,525 - ert.cli.model_factory - MainThread - INFO - Initiating experiment
+2024-10-09 02:43:37,526 - ert.enkf_main - MainThread - INFO - To repeat this experiment, add the following random seed to your config file:
+2024-10-09 02:43:37,527 - ert.enkf_main - MainThread - INFO - RANDOM_SEED 312529212182878248321363459069031352246
+2024-10-09 02:43:41,324 - ert.gui.simulation.queue_emitter - MainThread - DEBUG - init QueueEmitter
+2024-10-09 02:43:41,325 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - tracking...
+2024-10-09 02:43:41,370 - ert.enkf_main - ert_gui_simulation_thread - INFO - To repeat this experiment, add the following random seed to your config file:
+2024-10-09 02:43:41,372 - ert.enkf_main - ert_gui_simulation_thread - INFO - RANDOM_SEED 236247848552900803482448870235530531489
+2024-10-09 02:43:41,372 - ert.config.gen_kw_config - ert_gui_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 0
+2024-10-09 02:43:41,380 - ert.enkf_main - ert_gui_simulation_thread - DEBUG - sample_prior() time_used 0.0082s
+2024-10-09 02:43:41,393 - ert.enkf_main - ert_gui_simulation_thread - DEBUG - create_run_path() time_used 0.0125s
+2024-10-09 02:43:41,860 - ert.scheduler - LegacyEnsemble - INFO - Experiment ran on ORCHESTRATOR: scheduler on LOCAL queue
+2024-10-09 02:43:41,963 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit FullSnapshotEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=1, progress=0.0, indeterminate=False, iteration=0, snapshot=<ert.ensemble_evaluator.snapshot.Snapshot object at 0x7f11000b2880>)
+2024-10-09 02:43:41,970 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 0 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0'
+2024-10-09 02:43:42,985 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 0 finished with returncode=-9
+2024-10-09 02:43:42,985 - ert.scheduler.job - LegacyEnsemble - WARNING - Realization 0 failed, resubmitting for attempt 2 of 2
+2024-10-09 02:43:42,987 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 0 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0'
+2024-10-09 02:43:43,401 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=1, progress=0.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f11000b2790>)
+2024-10-09 02:43:43,412 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=1, progress=0.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f10fa448760>)
+2024-10-09 02:43:44,000 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 0 finished with returncode=-9
+2024-10-09 02:43:44,002 - ert.scheduler.job - LegacyEnsemble - ERROR - Realization: 0 failed after reaching max submit (2):
+	
+2024-10-09 02:43:44,004 - ert.scheduler.job - LegacyEnsemble - ERROR - job FLOW failed with: 'Process exited with status code 1'
+	stderr file: '/home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0/FLOW.stderr.1',
+	its contents:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/script/flow.py", line 9, in <module>
+    run(config, [arg for arg in sys.argv[1:] if len(arg) > 0])
+  File "/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/script/ecl_run.py", line 552, in run
+    run.runEclipse()
+  File "/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/script/ecl_run.py", line 388, in runEclipse
+    raise subprocess.CalledProcessError(return_code, command)
+subprocess.CalledProcessError: Command '['/usr/bin/flow', 'SPE3']' returned non-zero exit status 1.
+
+2024-10-09 02:43:44,006 - ert.scheduler.local_driver - LegacyEnsemble - INFO - All realization tasks finished
+2024-10-09 02:43:44,008 - ert.scheduler - LegacyEnsemble - INFO - Experiment ran on QUEUESYSTEM: LOCAL
+2024-10-09 02:43:45,415 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=1, progress=1.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f10fa436dc0>)
+2024-10-09 02:43:45,421 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=1, progress=1.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f10fa436730>)
+2024-10-09 02:43:47,483 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit EndEvent(failed=True, failed_msg='Experiment failed!\nRealization: 0 failed after reaching max submit (2):\n\t\njob FLOW failed with: \'Process exited with status code 1\'\n\tstderr file: \'/home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0/FLOW.stderr.1\',\n\tits contents:\nTraceback (most recent call last):\n  File "/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/script/flow.py", line 9, in <module>\n    run(config, [arg for arg in sys.argv[1:] if len(arg) > 0])\n  File "/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/script/ecl_run.py", line 552, in run\n    run.runEclipse()\n  File "/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/script/ecl_run.py", line 388, in runEclipse\n    raise subprocess.CalledProcessError(return_code, command)\nsubprocess.CalledProcessError: Command \'[\'/usr/bin/flow\', \'SPE3\']\' returned non-zero exit status 1.\n')
+2024-10-09 02:43:47,483 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - got end event
+2024-10-09 02:43:47,483 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - tracking done.
+2024-10-09 02:44:30,750 - root - MainThread - DEBUG - Resetting environment variable ERT_SITE_CONFIG
+2024-10-09 02:44:30,750 - root - MainThread - DEBUG - Deleting temporary directory for site-config
+2024-10-09 02:44:30,751 - root - MainThread - INFO - Peak memory use: 365204 kB

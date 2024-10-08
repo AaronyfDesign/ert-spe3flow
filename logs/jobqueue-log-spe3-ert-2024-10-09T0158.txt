@@ -1,0 +1,5 @@
+2024-10-09 01:58:59,788 - ert.scheduler - LegacyEnsemble - INFO - Experiment ran on ORCHESTRATOR: scheduler on LOCAL queue
+2024-10-09 01:58:59,907 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 0 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0'
+2024-10-09 01:59:02,613 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 0 finished with returncode=0
+2024-10-09 01:59:02,634 - ert.scheduler.local_driver - LegacyEnsemble - INFO - All realization tasks finished
+2024-10-09 01:59:02,636 - ert.scheduler - LegacyEnsemble - INFO - Experiment ran on QUEUESYSTEM: LOCAL

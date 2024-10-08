@@ -1,0 +1,16 @@
+======================================================================================================================================================
+Time: 2024.10.09 01:56:59
+Parent ensemble: 2024-10-09T0147_0
+Target ensemble: 2024-10-09T0147_1
+Alpha: 3.0
+Global scaling: 1.0
+Standard cutoff: 1e-06
+Run id: 697c1fe4-8f6f-4a52-a204-7c75f52fcfff
+Active observations: 0
+Deactivated observations - missing respons(es): 0
+Deactivated observations - ensemble_std > STD_CUTOFF: 1
+Deactivated observations - outlier: 0
+------------------------------------------------------------------------------------------------------------------------------------------------------
+                                        Observed history                |                  Simulated data            |      Status
+------------------------------------------------------------------------------------------------------------------------------------------------------
+  1   : WOPT_2016                      26.800 +/- 0.500                 |            368652.344 +/- 0.000            |      Deactivated, ensemble std (0.000) > std_cutoff

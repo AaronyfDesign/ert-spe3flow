@@ -1,0 +1,12 @@
+{
+  "summary": {
+    "name": "summary",
+    "input_file": "SPE3",
+    "keys": [
+      "FOPR",
+      "WOPT:PROD"
+    ],
+    "refcase": null,
+    "_ert_kind": "SummaryConfig"
+  }
+}

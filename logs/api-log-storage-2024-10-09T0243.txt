@@ -1,0 +1,7 @@
+2024-10-09 02:43:37,792 [INFO] uvicorn.error: Started server process [21155]
+2024-10-09 02:43:37,792 [INFO] uvicorn.error: Waiting for application startup.
+2024-10-09 02:43:37,792 [INFO] uvicorn.error: Application startup complete.
+2024-10-09 02:44:30,587 [INFO] uvicorn.error: Shutting down
+2024-10-09 02:44:30,687 [INFO] uvicorn.error: Waiting for application shutdown.
+2024-10-09 02:44:30,688 [INFO] uvicorn.error: Application shutdown complete.
+2024-10-09 02:44:30,688 [INFO] uvicorn.error: Finished server process [21155]

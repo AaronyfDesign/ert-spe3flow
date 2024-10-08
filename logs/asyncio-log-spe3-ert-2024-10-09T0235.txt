@@ -1,0 +1,7 @@
+2024-10-09 02:35:43,324 - asyncio - ert_gui_simulation_thread - DEBUG - Using selector: EpollSelector
+2024-10-09 02:35:43,327 - asyncio - ert_gui_simulation_thread - DEBUG - Using selector: EpollSelector
+2024-10-09 02:35:43,783 - asyncio - LegacyEnsemble - DEBUG - Using selector: EpollSelector
+2024-10-09 02:35:43,783 - asyncio - ert_gui_simulation_thread - DEBUG - Using selector: EpollSelector
+2024-10-09 02:35:43,784 - asyncio - LegacyEnsemble - DEBUG - Using selector: EpollSelector
+2024-10-09 02:35:43,786 - asyncio - LegacyEnsemble - DEBUG - Using selector: EpollSelector
+2024-10-09 02:35:45,961 - asyncio - LegacyEnsemble - DEBUG - Using selector: EpollSelector

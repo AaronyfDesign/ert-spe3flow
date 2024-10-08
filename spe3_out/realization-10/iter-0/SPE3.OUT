@@ -1,0 +1,1040 @@
+**********************************************************************
+*                                                                    *
+*                        This is flow 2023.10                        *
+*                                                                    *
+* Flow is a simulator for fully implicit three-phase black-oil flow, *
+*             including solvent and polymer capabilities.            *
+*          For more information, see https://opm-project.org         *
+*                                                                    *
+**********************************************************************
+
+Using 1 MPI processes with 2 OMP threads on each 
+
+Reading deck file 'SPE3.DATA'
+    0 Reading RUNSPEC  in SPE3.DATA line 18
+    1 Reading TITLE    in SPE3.DATA line 21
+    2 Reading DIMENS   in SPE3.DATA line 23
+    3 Reading OIL      in SPE3.DATA line 25
+    4 Reading GAS      in SPE3.DATA line 26
+    5 Reading WATER    in SPE3.DATA line 27
+    6 Reading VAPOIL   in SPE3.DATA line 28
+    7 Reading DISGAS   in SPE3.DATA line 29
+    8 Reading FIELD    in SPE3.DATA line 31
+    9 Reading START    in SPE3.DATA line 33
+   10 Reading WELLDIMS in SPE3.DATA line 36
+   11 Reading TABDIMS  in SPE3.DATA line 47
+   12 Reading EQLDIMS  in SPE3.DATA line 52
+   13 Reading UNIFOUT  in SPE3.DATA line 56
+   14 Reading GRID     in SPE3.DATA line 58
+   15 Reading INIT     in SPE3.DATA line 65
+   16 Reading NOECHO   in SPE3.DATA line 70
+   17 Reading DX       in SPE3.DATA line 71
+   18 Reading DY       in SPE3.DATA line 74
+   19 Reading DZ       in SPE3.DATA line 77
+   20 Reading TOPS     in SPE3.DATA line 82
+   21 Reading PORO     in SPE3.DATA line 87
+   22 Reading PERMX    in SPE3.DATA line 92
+   23 Reading PERMY    in SPE3.DATA line 98
+   24 Reading PERMZ    in SPE3.DATA line 101
+   25 Reading ECHO     in SPE3.DATA line 105
+   26 Reading PROPS    in SPE3.DATA line 107
+   27 Reading ROCK     in SPE3.DATA line 110
+   28 Reading SGOF     in SPE3.DATA line 118
+   29 Reading SWOF     in SPE3.DATA line 149
+   30 Reading DENSITY  in SPE3.DATA line 187
+   31 Reading PVTW     in SPE3.DATA line 192
+   32 Reading PVTO     in SPE3.DATA line 215
+   33 Reading PVTG     in SPE3.DATA line 285
+   34 Reading SOLUTION in SPE3.DATA line 309
+   35 Reading EQUIL    in SPE3.DATA line 311
+   36 Reading SUMMARY  in SPE3.DATA line 336
+   37 Reading WOPR     in SPE3.DATA line 338
+   38 Reading FOPR     in SPE3.DATA line 342
+   39 Reading WOPT     in SPE3.DATA line 344
+   40 Reading FOPT     in SPE3.DATA line 348
+   41 Reading BOSAT    in SPE3.DATA line 350
+   42 Reading BRS      in SPE3.DATA line 355
+   43 Reading WBHP     in SPE3.DATA line 365
+   44 Reading WGIR     in SPE3.DATA line 369
+   45 Reading WGPR     in SPE3.DATA line 377
+   46 Reading WOIR     in SPE3.DATA line 385
+   47 Reading WWIR     in SPE3.DATA line 401
+   48 Reading WWPR     in SPE3.DATA line 409
+   49 Reading SCHEDULE in SPE3.DATA line 418
+   50 Reading RPTRST   in SPE3.DATA line 420
+   51 Reading WELSPECS in SPE3.DATA line 431
+   52 Reading COMPDAT  in SPE3.DATA line 443
+   53 Reading WCONPROD in SPE3.DATA line 453
+   54 Reading WCONINJE in SPE3.DATA line 461
+   55 Reading TSTEP    in SPE3.DATA line 469
+   56 Reading WCONINJE in SPE3.DATA line 485
+   57 Reading TSTEP    in SPE3.DATA line 490
+
+Warning: Unsupported keywords or keyword items:
+
+  NOECHO: keyword not supported
+  In file: SPE3.DATA, line 70
+
+  ECHO: keyword not supported
+  In file: SPE3.DATA, line 105
+
+Creating grid from keywords DX, DY, DZ and TOPS
+3 fluid phases are active
+
+Processing dynamic information from
+SPE3.DATA line 418
+Initializing report step 0/175 at 2015-01-01 0 DAYS line 418
+Processing keyword RPTRST at line 420
+Processing keyword WELSPECS at line 431
+Processing keyword COMPDAT at line 443
+Processing keyword WCONPROD at line 453
+Processing keyword WCONINJE at line 461
+Complete report step 1 (52.14284722222222 DAYS) at 2015-02-22 (0 DAYS)
+
+Initializing report step 2/175 at 2015-02-22 (0 DAYS) line 469
+Complete report step 2 (52.142858796296295 DAYS) at 2015-04-15 (52.14284722222222 DAYS)
+
+Initializing report step 3/175 at 2015-04-15 (52.14284722222222 DAYS) line 469
+Complete report step 3 (52.142858796296295 DAYS) at 2015-06-06 (104.28570601851851 DAYS)
+
+Initializing report step 4/175 at 2015-06-06 (104.28570601851851 DAYS) line 469
+Complete report step 4 (52.142858796296295 DAYS) at 2015-07-28 (156.42856481481482 DAYS)
+
+Initializing report step 5/175 at 2015-07-28 (156.42856481481482 DAYS) line 469
+Complete report step 5 (52.142858796296295 DAYS) at 2015-09-18 (208.5714236111111 DAYS)
+
+Processing grid
+Total number of active cells: 324 / total pore volume: 25813979 RB
+
+===============Saturation Functions Diagnostics===============
+
+System:  Black-oil system.
+Relative permeability input format: Saturation Family I.
+Number of saturation regions: 1
+
+
+
+================ Starting main simulation loop ===============
+
+
+Report step  0/175 at day 0/5475, date = 01-Jan-2015
+Using Newton nonlinear solver.
+
+Starting time step 0, stepsize 1 days, at day 0/52.1428, date = 01-Jan-2015
+ Newton its= 5, linearizations= 6 (0.0sec), linear its= 14 (0.0sec)
+
+Starting time step 1, stepsize 2.2 days, at day 1/52.1428, date = 02-Jan-2015
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 12 (0.0sec)
+
+Starting time step 2, stepsize 6.6 days, at day 3.2/52.1428, date = 04-Jan-2015
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 22 (0.0sec)
+
+Starting time step 3, stepsize 19.8 days, at day 9.8/52.1428, date = 10-Jan-2015
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 26 (0.0sec)
+
+Starting time step 4, stepsize 22.5428 days, at day 29.6/52.1428, date = 30-Jan-2015
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 27 (0.0sec)
+
+Report step  1/175 at day 52.1428/5475, date = 22-Feb-2015
+
+Starting time step 0, stepsize 52.1429 days, at day 52.1428/104.286, date = 22-Feb-2015
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 30 (0.0sec)
+
+Report step  2/175 at day 104.286/5475, date = 15-Apr-2015
+
+Starting time step 0, stepsize 52.1429 days, at day 104.286/156.429, date = 15-Apr-2015
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 30 (0.0sec)
+
+Report step  3/175 at day 156.429/5475, date = 06-Jun-2015
+
+Starting time step 0, stepsize 52.1429 days, at day 156.429/208.571, date = 06-Jun-2015
+ Newton its= 4, linearizations= 5 (0.0sec), linear its= 38 (0.0sec)
+
+Report step  4/175 at day 208.571/5475, date = 28-Jul-2015
+
+Starting time step 0, stepsize 52.1429 days, at day 208.571/260.714, date = 28-Jul-2015
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 28 (0.0sec)
+
+Report step  5/175 at day 260.714/5475, date = 18-Sep-2015
+
+Starting time step 0, stepsize 52.1429 days, at day 260.714/312.857, date = 18-Sep-2015
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 24 (0.0sec)
+
+Report step  6/175 at day 312.857/5475, date = 09-Nov-2015
+
+Starting time step 0, stepsize 52.1428 days, at day 312.857/365, date = 09-Nov-2015
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 29 (0.0sec)
+
+Report step  7/175 at day 365/5475, date = 31-Dec-2015
+
+Starting time step 0, stepsize 31 days, at day 365/396, date = 31-Dec-2015
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step  8/175 at day 396/5475, date = 31-Jan-2016
+
+Starting time step 0, stepsize 28 days, at day 396/424, date = 31-Jan-2016
+Restart file written for report step   8/175, date = 31-Jan-2016 23:59:59
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step  9/175 at day 424/5475, date = 28-Feb-2016
+
+Starting time step 0, stepsize 31 days, at day 424/455, date = 28-Feb-2016
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 10/175 at day 455/5475, date = 30-Mar-2016
+
+Starting time step 0, stepsize 30 days, at day 455/485, date = 30-Mar-2016
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 11/175 at day 485/5475, date = 29-Apr-2016
+
+Starting time step 0, stepsize 31 days, at day 485/516, date = 29-Apr-2016
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 12/175 at day 516/5475, date = 30-May-2016
+
+Starting time step 0, stepsize 30 days, at day 516/546, date = 30-May-2016
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 13/175 at day 546/5475, date = 29-Jun-2016
+
+Starting time step 0, stepsize 31 days, at day 546/577, date = 29-Jun-2016
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 14/175 at day 577/5475, date = 30-Jul-2016
+
+Starting time step 0, stepsize 31 days, at day 577/608, date = 30-Jul-2016
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 15/175 at day 608/5475, date = 30-Aug-2016
+
+Starting time step 0, stepsize 30 days, at day 608/638, date = 30-Aug-2016
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 16/175 at day 638/5475, date = 29-Sep-2016
+
+Starting time step 0, stepsize 31 days, at day 638/669, date = 29-Sep-2016
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 12 (0.0sec)
+
+Report step 17/175 at day 669/5475, date = 30-Oct-2016
+
+Starting time step 0, stepsize 30 days, at day 669/699, date = 30-Oct-2016
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 18/175 at day 699/5475, date = 29-Nov-2016
+
+Starting time step 0, stepsize 31 days, at day 699/730, date = 29-Nov-2016
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 25 (0.0sec)
+
+Report step 19/175 at day 730/5475, date = 30-Dec-2016
+
+Starting time step 0, stepsize 31 days, at day 730/761, date = 30-Dec-2016
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 20/175 at day 761/5475, date = 30-Jan-2017
+
+Starting time step 0, stepsize 28 days, at day 761/789, date = 30-Jan-2017
+Restart file written for report step  20/175, date = 30-Jan-2017 23:59:59
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 21/175 at day 789/5475, date = 27-Feb-2017
+
+Starting time step 0, stepsize 31 days, at day 789/820, date = 27-Feb-2017
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 15 (0.0sec)
+
+Report step 22/175 at day 820/5475, date = 30-Mar-2017
+
+Starting time step 0, stepsize 30 days, at day 820/850, date = 30-Mar-2017
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 23/175 at day 850/5475, date = 29-Apr-2017
+
+Starting time step 0, stepsize 31 days, at day 850/881, date = 29-Apr-2017
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 24/175 at day 881/5475, date = 30-May-2017
+
+Starting time step 0, stepsize 30 days, at day 881/911, date = 30-May-2017
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 20 (0.0sec)
+
+Report step 25/175 at day 911/5475, date = 29-Jun-2017
+
+Starting time step 0, stepsize 31 days, at day 911/942, date = 29-Jun-2017
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 26/175 at day 942/5475, date = 30-Jul-2017
+
+Starting time step 0, stepsize 31 days, at day 942/973, date = 30-Jul-2017
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 27/175 at day 973/5475, date = 30-Aug-2017
+
+Starting time step 0, stepsize 30 days, at day 973/1003, date = 30-Aug-2017
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 20 (0.0sec)
+
+Report step 28/175 at day 1003/5475, date = 29-Sep-2017
+
+Starting time step 0, stepsize 31 days, at day 1003/1034, date = 29-Sep-2017
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 29/175 at day 1034/5475, date = 30-Oct-2017
+
+Starting time step 0, stepsize 30 days, at day 1034/1064, date = 30-Oct-2017
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 30/175 at day 1064/5475, date = 29-Nov-2017
+
+Starting time step 0, stepsize 31 days, at day 1064/1095, date = 29-Nov-2017
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 20 (0.0sec)
+
+Report step 31/175 at day 1095/5475, date = 30-Dec-2017
+
+Starting time step 0, stepsize 31 days, at day 1095/1126, date = 30-Dec-2017
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 20 (0.0sec)
+
+Report step 32/175 at day 1126/5475, date = 30-Jan-2018
+
+Starting time step 0, stepsize 28 days, at day 1126/1154, date = 30-Jan-2018
+Restart file written for report step  32/175, date = 30-Jan-2018 23:59:59
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 21 (0.0sec)
+
+Report step 33/175 at day 1154/5475, date = 27-Feb-2018
+
+Starting time step 0, stepsize 31 days, at day 1154/1185, date = 27-Feb-2018
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 15 (0.0sec)
+
+Report step 34/175 at day 1185/5475, date = 30-Mar-2018
+
+Starting time step 0, stepsize 30 days, at day 1185/1215, date = 30-Mar-2018
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 35/175 at day 1215/5475, date = 29-Apr-2018
+
+Starting time step 0, stepsize 31 days, at day 1215/1246, date = 29-Apr-2018
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 36/175 at day 1246/5475, date = 30-May-2018
+
+Starting time step 0, stepsize 30 days, at day 1246/1276, date = 30-May-2018
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 11 (0.0sec)
+
+Report step 37/175 at day 1276/5475, date = 29-Jun-2018
+
+Starting time step 0, stepsize 31 days, at day 1276/1307, date = 29-Jun-2018
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 12 (0.0sec)
+
+Report step 38/175 at day 1307/5475, date = 30-Jul-2018
+
+Starting time step 0, stepsize 31 days, at day 1307/1338, date = 30-Jul-2018
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 23 (0.0sec)
+
+Report step 39/175 at day 1338/5475, date = 30-Aug-2018
+
+Starting time step 0, stepsize 30 days, at day 1338/1368, date = 30-Aug-2018
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 40/175 at day 1368/5475, date = 29-Sep-2018
+
+Starting time step 0, stepsize 31 days, at day 1368/1399, date = 29-Sep-2018
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 41/175 at day 1399/5475, date = 30-Oct-2018
+
+Starting time step 0, stepsize 30 days, at day 1399/1429, date = 30-Oct-2018
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 42/175 at day 1429/5475, date = 29-Nov-2018
+
+Starting time step 0, stepsize 31 days, at day 1429/1460, date = 29-Nov-2018
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 21 (0.0sec)
+
+Report step 43/175 at day 1460/5475, date = 30-Dec-2018
+
+Starting time step 0, stepsize 31 days, at day 1460/1491, date = 30-Dec-2018
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 44/175 at day 1491/5475, date = 30-Jan-2019
+
+Starting time step 0, stepsize 28 days, at day 1491/1519, date = 30-Jan-2019
+Restart file written for report step  44/175, date = 30-Jan-2019 23:59:59
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 45/175 at day 1519/5475, date = 27-Feb-2019
+
+Starting time step 0, stepsize 31 days, at day 1519/1550, date = 27-Feb-2019
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 21 (0.0sec)
+
+Report step 46/175 at day 1550/5475, date = 30-Mar-2019
+
+Starting time step 0, stepsize 30 days, at day 1550/1580, date = 30-Mar-2019
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 21 (0.0sec)
+
+Report step 47/175 at day 1580/5475, date = 29-Apr-2019
+
+Starting time step 0, stepsize 31 days, at day 1580/1611, date = 29-Apr-2019
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 23 (0.0sec)
+
+Report step 48/175 at day 1611/5475, date = 30-May-2019
+
+Starting time step 0, stepsize 30 days, at day 1611/1641, date = 30-May-2019
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 22 (0.0sec)
+
+Report step 49/175 at day 1641/5475, date = 29-Jun-2019
+
+Starting time step 0, stepsize 31 days, at day 1641/1672, date = 29-Jun-2019
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 20 (0.0sec)
+
+Report step 50/175 at day 1672/5475, date = 30-Jul-2019
+
+Starting time step 0, stepsize 31 days, at day 1672/1703, date = 30-Jul-2019
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 20 (0.0sec)
+
+Report step 51/175 at day 1703/5475, date = 30-Aug-2019
+
+Starting time step 0, stepsize 30 days, at day 1703/1733, date = 30-Aug-2019
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 52/175 at day 1733/5475, date = 29-Sep-2019
+
+Starting time step 0, stepsize 31 days, at day 1733/1764, date = 29-Sep-2019
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 53/175 at day 1764/5475, date = 30-Oct-2019
+
+Starting time step 0, stepsize 30 days, at day 1764/1794, date = 30-Oct-2019
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 54/175 at day 1794/5475, date = 29-Nov-2019
+
+Starting time step 0, stepsize 31 days, at day 1794/1825, date = 29-Nov-2019
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 55/175 at day 1825/5475, date = 30-Dec-2019
+
+Starting time step 0, stepsize 31 days, at day 1825/1856, date = 30-Dec-2019
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 56/175 at day 1856/5475, date = 30-Jan-2020
+
+Starting time step 0, stepsize 28 days, at day 1856/1884, date = 30-Jan-2020
+Restart file written for report step  56/175, date = 30-Jan-2020 23:59:59
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 57/175 at day 1884/5475, date = 27-Feb-2020
+
+Starting time step 0, stepsize 31 days, at day 1884/1915, date = 27-Feb-2020
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 58/175 at day 1915/5475, date = 29-Mar-2020
+
+Starting time step 0, stepsize 30 days, at day 1915/1945, date = 29-Mar-2020
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 20 (0.0sec)
+
+Report step 59/175 at day 1945/5475, date = 28-Apr-2020
+
+Starting time step 0, stepsize 31 days, at day 1945/1976, date = 28-Apr-2020
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 14 (0.0sec)
+
+Report step 60/175 at day 1976/5475, date = 29-May-2020
+
+Starting time step 0, stepsize 30 days, at day 1976/2006, date = 29-May-2020
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 61/175 at day 2006/5475, date = 28-Jun-2020
+
+Starting time step 0, stepsize 31 days, at day 2006/2037, date = 28-Jun-2020
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 62/175 at day 2037/5475, date = 29-Jul-2020
+
+Starting time step 0, stepsize 31 days, at day 2037/2068, date = 29-Jul-2020
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 63/175 at day 2068/5475, date = 29-Aug-2020
+
+Starting time step 0, stepsize 30 days, at day 2068/2098, date = 29-Aug-2020
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 21 (0.0sec)
+
+Report step 64/175 at day 2098/5475, date = 28-Sep-2020
+
+Starting time step 0, stepsize 31 days, at day 2098/2129, date = 28-Sep-2020
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 65/175 at day 2129/5475, date = 29-Oct-2020
+
+Starting time step 0, stepsize 30 days, at day 2129/2159, date = 29-Oct-2020
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 66/175 at day 2159/5475, date = 28-Nov-2020
+
+Starting time step 0, stepsize 31 days, at day 2159/2190, date = 28-Nov-2020
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 67/175 at day 2190/5475, date = 29-Dec-2020
+
+Starting time step 0, stepsize 31 days, at day 2190/2221, date = 29-Dec-2020
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 68/175 at day 2221/5475, date = 29-Jan-2021
+
+Starting time step 0, stepsize 28 days, at day 2221/2249, date = 29-Jan-2021
+Restart file written for report step  68/175, date = 29-Jan-2021 23:59:59
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 69/175 at day 2249/5475, date = 26-Feb-2021
+
+Starting time step 0, stepsize 31 days, at day 2249/2280, date = 26-Feb-2021
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 15 (0.0sec)
+
+Report step 70/175 at day 2280/5475, date = 29-Mar-2021
+
+Starting time step 0, stepsize 30 days, at day 2280/2310, date = 29-Mar-2021
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 71/175 at day 2310/5475, date = 28-Apr-2021
+
+Starting time step 0, stepsize 31 days, at day 2310/2341, date = 28-Apr-2021
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 72/175 at day 2341/5475, date = 29-May-2021
+
+Starting time step 0, stepsize 30 days, at day 2341/2371, date = 29-May-2021
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 73/175 at day 2371/5475, date = 28-Jun-2021
+
+Starting time step 0, stepsize 31 days, at day 2371/2402, date = 28-Jun-2021
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 74/175 at day 2402/5475, date = 29-Jul-2021
+
+Starting time step 0, stepsize 31 days, at day 2402/2433, date = 29-Jul-2021
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 75/175 at day 2433/5475, date = 29-Aug-2021
+
+Starting time step 0, stepsize 30 days, at day 2433/2463, date = 29-Aug-2021
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 76/175 at day 2463/5475, date = 28-Sep-2021
+
+Starting time step 0, stepsize 31 days, at day 2463/2494, date = 28-Sep-2021
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 23 (0.0sec)
+
+Report step 77/175 at day 2494/5475, date = 29-Oct-2021
+
+Starting time step 0, stepsize 30 days, at day 2494/2524, date = 29-Oct-2021
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 78/175 at day 2524/5475, date = 28-Nov-2021
+
+Starting time step 0, stepsize 31 days, at day 2524/2555, date = 28-Nov-2021
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 79/175 at day 2555/5475, date = 29-Dec-2021
+
+Starting time step 0, stepsize 31 days, at day 2555/2586, date = 29-Dec-2021
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 80/175 at day 2586/5475, date = 29-Jan-2022
+
+Starting time step 0, stepsize 28 days, at day 2586/2614, date = 29-Jan-2022
+Restart file written for report step  80/175, date = 29-Jan-2022 23:59:59
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 21 (0.0sec)
+
+Report step 81/175 at day 2614/5475, date = 26-Feb-2022
+
+Starting time step 0, stepsize 31 days, at day 2614/2645, date = 26-Feb-2022
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 21 (0.0sec)
+
+Report step 82/175 at day 2645/5475, date = 29-Mar-2022
+
+Starting time step 0, stepsize 30 days, at day 2645/2675, date = 29-Mar-2022
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 83/175 at day 2675/5475, date = 28-Apr-2022
+
+Starting time step 0, stepsize 31 days, at day 2675/2706, date = 28-Apr-2022
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 84/175 at day 2706/5475, date = 29-May-2022
+
+Starting time step 0, stepsize 30 days, at day 2706/2736, date = 29-May-2022
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 20 (0.0sec)
+
+Report step 85/175 at day 2736/5475, date = 28-Jun-2022
+
+Starting time step 0, stepsize 31 days, at day 2736/2767, date = 28-Jun-2022
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 86/175 at day 2767/5475, date = 29-Jul-2022
+
+Starting time step 0, stepsize 31 days, at day 2767/2798, date = 29-Jul-2022
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 87/175 at day 2798/5475, date = 29-Aug-2022
+
+Starting time step 0, stepsize 30 days, at day 2798/2828, date = 29-Aug-2022
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 88/175 at day 2828/5475, date = 28-Sep-2022
+
+Starting time step 0, stepsize 31 days, at day 2828/2859, date = 28-Sep-2022
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 89/175 at day 2859/5475, date = 29-Oct-2022
+
+Starting time step 0, stepsize 30 days, at day 2859/2889, date = 29-Oct-2022
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 90/175 at day 2889/5475, date = 28-Nov-2022
+
+Starting time step 0, stepsize 31 days, at day 2889/2920, date = 28-Nov-2022
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 91/175 at day 2920/5475, date = 29-Dec-2022
+
+Starting time step 0, stepsize 31 days, at day 2920/2951, date = 29-Dec-2022
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 92/175 at day 2951/5475, date = 29-Jan-2023
+
+Starting time step 0, stepsize 28 days, at day 2951/2979, date = 29-Jan-2023
+Restart file written for report step  92/175, date = 29-Jan-2023 23:59:59
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 93/175 at day 2979/5475, date = 26-Feb-2023
+
+Starting time step 0, stepsize 31 days, at day 2979/3010, date = 26-Feb-2023
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 21 (0.0sec)
+
+Report step 94/175 at day 3010/5475, date = 29-Mar-2023
+
+Starting time step 0, stepsize 30 days, at day 3010/3040, date = 29-Mar-2023
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 21 (0.0sec)
+
+Report step 95/175 at day 3040/5475, date = 28-Apr-2023
+
+Starting time step 0, stepsize 31 days, at day 3040/3071, date = 28-Apr-2023
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 96/175 at day 3071/5475, date = 29-May-2023
+
+Starting time step 0, stepsize 30 days, at day 3071/3101, date = 29-May-2023
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 20 (0.0sec)
+
+Report step 97/175 at day 3101/5475, date = 28-Jun-2023
+
+Starting time step 0, stepsize 31 days, at day 3101/3132, date = 28-Jun-2023
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 98/175 at day 3132/5475, date = 29-Jul-2023
+
+Starting time step 0, stepsize 31 days, at day 3132/3163, date = 29-Jul-2023
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 13 (0.0sec)
+
+Report step 99/175 at day 3163/5475, date = 29-Aug-2023
+
+Starting time step 0, stepsize 30 days, at day 3163/3193, date = 29-Aug-2023
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 15 (0.0sec)
+
+Report step 100/175 at day 3193/5475, date = 28-Sep-2023
+
+Starting time step 0, stepsize 31 days, at day 3193/3224, date = 28-Sep-2023
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 101/175 at day 3224/5475, date = 29-Oct-2023
+
+Starting time step 0, stepsize 30 days, at day 3224/3254, date = 29-Oct-2023
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 102/175 at day 3254/5475, date = 28-Nov-2023
+
+Starting time step 0, stepsize 31 days, at day 3254/3285, date = 28-Nov-2023
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 103/175 at day 3285/5475, date = 29-Dec-2023
+
+Starting time step 0, stepsize 31 days, at day 3285/3316, date = 29-Dec-2023
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 25 (0.0sec)
+
+Report step 104/175 at day 3316/5475, date = 29-Jan-2024
+
+Starting time step 0, stepsize 28 days, at day 3316/3344, date = 29-Jan-2024
+Restart file written for report step 104/175, date = 29-Jan-2024 23:59:59
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 105/175 at day 3344/5475, date = 26-Feb-2024
+
+Starting time step 0, stepsize 31 days, at day 3344/3375, date = 26-Feb-2024
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 106/175 at day 3375/5475, date = 28-Mar-2024
+
+Starting time step 0, stepsize 30 days, at day 3375/3405, date = 28-Mar-2024
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 107/175 at day 3405/5475, date = 27-Apr-2024
+
+Starting time step 0, stepsize 31 days, at day 3405/3436, date = 27-Apr-2024
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 108/175 at day 3436/5475, date = 28-May-2024
+
+Starting time step 0, stepsize 30 days, at day 3436/3466, date = 28-May-2024
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 109/175 at day 3466/5475, date = 27-Jun-2024
+
+Starting time step 0, stepsize 31 days, at day 3466/3497, date = 27-Jun-2024
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 110/175 at day 3497/5475, date = 28-Jul-2024
+
+Starting time step 0, stepsize 31 days, at day 3497/3528, date = 28-Jul-2024
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 111/175 at day 3528/5475, date = 28-Aug-2024
+
+Starting time step 0, stepsize 30 days, at day 3528/3558, date = 28-Aug-2024
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 112/175 at day 3558/5475, date = 27-Sep-2024
+
+Starting time step 0, stepsize 31 days, at day 3558/3589, date = 27-Sep-2024
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 22 (0.0sec)
+
+Report step 113/175 at day 3589/5475, date = 28-Oct-2024
+
+Starting time step 0, stepsize 30 days, at day 3589/3619, date = 28-Oct-2024
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 114/175 at day 3619/5475, date = 27-Nov-2024
+
+Starting time step 0, stepsize 31 days, at day 3619/3650, date = 27-Nov-2024
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 115/175 at day 3650/5475, date = 28-Dec-2024
+
+Starting time step 0, stepsize 31 days, at day 3650/3681, date = 28-Dec-2024
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 116/175 at day 3681/5475, date = 28-Jan-2025
+
+Starting time step 0, stepsize 28 days, at day 3681/3709, date = 28-Jan-2025
+Restart file written for report step 116/175, date = 28-Jan-2025 23:59:59
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 117/175 at day 3709/5475, date = 25-Feb-2025
+
+Starting time step 0, stepsize 31 days, at day 3709/3740, date = 25-Feb-2025
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 118/175 at day 3740/5475, date = 28-Mar-2025
+
+Starting time step 0, stepsize 30 days, at day 3740/3770, date = 28-Mar-2025
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 119/175 at day 3770/5475, date = 27-Apr-2025
+
+Starting time step 0, stepsize 31 days, at day 3770/3801, date = 27-Apr-2025
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 120/175 at day 3801/5475, date = 28-May-2025
+
+Starting time step 0, stepsize 30 days, at day 3801/3831, date = 28-May-2025
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 121/175 at day 3831/5475, date = 27-Jun-2025
+
+Starting time step 0, stepsize 31 days, at day 3831/3862, date = 27-Jun-2025
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 122/175 at day 3862/5475, date = 28-Jul-2025
+
+Starting time step 0, stepsize 31 days, at day 3862/3893, date = 28-Jul-2025
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 123/175 at day 3893/5475, date = 28-Aug-2025
+
+Starting time step 0, stepsize 30 days, at day 3893/3923, date = 28-Aug-2025
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 124/175 at day 3923/5475, date = 27-Sep-2025
+
+Starting time step 0, stepsize 31 days, at day 3923/3954, date = 27-Sep-2025
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 125/175 at day 3954/5475, date = 28-Oct-2025
+
+Starting time step 0, stepsize 30 days, at day 3954/3984, date = 28-Oct-2025
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 126/175 at day 3984/5475, date = 27-Nov-2025
+
+Starting time step 0, stepsize 31 days, at day 3984/4015, date = 27-Nov-2025
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 127/175 at day 4015/5475, date = 28-Dec-2025
+
+Starting time step 0, stepsize 31 days, at day 4015/4046, date = 28-Dec-2025
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 128/175 at day 4046/5475, date = 28-Jan-2026
+
+Starting time step 0, stepsize 28 days, at day 4046/4074, date = 28-Jan-2026
+Restart file written for report step 128/175, date = 28-Jan-2026 23:59:59
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 129/175 at day 4074/5475, date = 25-Feb-2026
+
+Starting time step 0, stepsize 31 days, at day 4074/4105, date = 25-Feb-2026
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 130/175 at day 4105/5475, date = 28-Mar-2026
+
+Starting time step 0, stepsize 30 days, at day 4105/4135, date = 28-Mar-2026
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 131/175 at day 4135/5475, date = 27-Apr-2026
+
+Starting time step 0, stepsize 31 days, at day 4135/4166, date = 27-Apr-2026
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 24 (0.0sec)
+
+Report step 132/175 at day 4166/5475, date = 28-May-2026
+
+Starting time step 0, stepsize 30 days, at day 4166/4196, date = 28-May-2026
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 133/175 at day 4196/5475, date = 27-Jun-2026
+
+Starting time step 0, stepsize 31 days, at day 4196/4227, date = 27-Jun-2026
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 134/175 at day 4227/5475, date = 28-Jul-2026
+
+Starting time step 0, stepsize 31 days, at day 4227/4258, date = 28-Jul-2026
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 135/175 at day 4258/5475, date = 28-Aug-2026
+
+Starting time step 0, stepsize 30 days, at day 4258/4288, date = 28-Aug-2026
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 136/175 at day 4288/5475, date = 27-Sep-2026
+
+Starting time step 0, stepsize 31 days, at day 4288/4319, date = 27-Sep-2026
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 137/175 at day 4319/5475, date = 28-Oct-2026
+
+Starting time step 0, stepsize 30 days, at day 4319/4349, date = 28-Oct-2026
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 138/175 at day 4349/5475, date = 27-Nov-2026
+
+Starting time step 0, stepsize 31 days, at day 4349/4380, date = 27-Nov-2026
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 139/175 at day 4380/5475, date = 28-Dec-2026
+
+Starting time step 0, stepsize 31 days, at day 4380/4411, date = 28-Dec-2026
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 20 (0.0sec)
+
+Report step 140/175 at day 4411/5475, date = 28-Jan-2027
+
+Starting time step 0, stepsize 28 days, at day 4411/4439, date = 28-Jan-2027
+Restart file written for report step 140/175, date = 28-Jan-2027 23:59:59
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 141/175 at day 4439/5475, date = 25-Feb-2027
+
+Starting time step 0, stepsize 31 days, at day 4439/4470, date = 25-Feb-2027
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 142/175 at day 4470/5475, date = 28-Mar-2027
+
+Starting time step 0, stepsize 30 days, at day 4470/4500, date = 28-Mar-2027
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 143/175 at day 4500/5475, date = 27-Apr-2027
+
+Starting time step 0, stepsize 31 days, at day 4500/4531, date = 27-Apr-2027
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 144/175 at day 4531/5475, date = 28-May-2027
+
+Starting time step 0, stepsize 30 days, at day 4531/4561, date = 28-May-2027
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 145/175 at day 4561/5475, date = 27-Jun-2027
+
+Starting time step 0, stepsize 31 days, at day 4561/4592, date = 27-Jun-2027
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 146/175 at day 4592/5475, date = 28-Jul-2027
+
+Starting time step 0, stepsize 31 days, at day 4592/4623, date = 28-Jul-2027
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 147/175 at day 4623/5475, date = 28-Aug-2027
+
+Starting time step 0, stepsize 30 days, at day 4623/4653, date = 28-Aug-2027
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 148/175 at day 4653/5475, date = 27-Sep-2027
+
+Starting time step 0, stepsize 31 days, at day 4653/4684, date = 27-Sep-2027
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 22 (0.0sec)
+
+Report step 149/175 at day 4684/5475, date = 28-Oct-2027
+
+Starting time step 0, stepsize 30 days, at day 4684/4714, date = 28-Oct-2027
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 20 (0.0sec)
+
+Report step 150/175 at day 4714/5475, date = 27-Nov-2027
+
+Starting time step 0, stepsize 31 days, at day 4714/4745, date = 27-Nov-2027
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 151/175 at day 4745/5475, date = 28-Dec-2027
+
+Starting time step 0, stepsize 31 days, at day 4745/4776, date = 28-Dec-2027
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 25 (0.0sec)
+
+Report step 152/175 at day 4776/5475, date = 28-Jan-2028
+
+Starting time step 0, stepsize 28 days, at day 4776/4804, date = 28-Jan-2028
+Restart file written for report step 152/175, date = 28-Jan-2028 23:59:59
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 153/175 at day 4804/5475, date = 25-Feb-2028
+
+Starting time step 0, stepsize 31 days, at day 4804/4835, date = 25-Feb-2028
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 154/175 at day 4835/5475, date = 27-Mar-2028
+
+Starting time step 0, stepsize 30 days, at day 4835/4865, date = 27-Mar-2028
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 155/175 at day 4865/5475, date = 26-Apr-2028
+
+Starting time step 0, stepsize 31 days, at day 4865/4896, date = 26-Apr-2028
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 156/175 at day 4896/5475, date = 27-May-2028
+
+Starting time step 0, stepsize 30 days, at day 4896/4926, date = 27-May-2028
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 157/175 at day 4926/5475, date = 26-Jun-2028
+
+Starting time step 0, stepsize 31 days, at day 4926/4957, date = 26-Jun-2028
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 158/175 at day 4957/5475, date = 27-Jul-2028
+
+Starting time step 0, stepsize 31 days, at day 4957/4988, date = 27-Jul-2028
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 159/175 at day 4988/5475, date = 27-Aug-2028
+
+Starting time step 0, stepsize 30 days, at day 4988/5018, date = 27-Aug-2028
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 23 (0.0sec)
+
+Report step 160/175 at day 5018/5475, date = 26-Sep-2028
+
+Starting time step 0, stepsize 31 days, at day 5018/5049, date = 26-Sep-2028
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 161/175 at day 5049/5475, date = 27-Oct-2028
+
+Starting time step 0, stepsize 30 days, at day 5049/5079, date = 27-Oct-2028
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 162/175 at day 5079/5475, date = 26-Nov-2028
+
+Starting time step 0, stepsize 31 days, at day 5079/5110, date = 26-Nov-2028
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 24 (0.0sec)
+
+Report step 163/175 at day 5110/5475, date = 27-Dec-2028
+
+Starting time step 0, stepsize 31 days, at day 5110/5141, date = 27-Dec-2028
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 164/175 at day 5141/5475, date = 27-Jan-2029
+
+Starting time step 0, stepsize 28 days, at day 5141/5169, date = 27-Jan-2029
+Restart file written for report step 164/175, date = 27-Jan-2029 23:59:59
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 165/175 at day 5169/5475, date = 24-Feb-2029
+
+Starting time step 0, stepsize 31 days, at day 5169/5200, date = 24-Feb-2029
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 166/175 at day 5200/5475, date = 27-Mar-2029
+
+Starting time step 0, stepsize 30 days, at day 5200/5230, date = 27-Mar-2029
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 167/175 at day 5230/5475, date = 26-Apr-2029
+
+Starting time step 0, stepsize 31 days, at day 5230/5261, date = 26-Apr-2029
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 168/175 at day 5261/5475, date = 27-May-2029
+
+Starting time step 0, stepsize 30 days, at day 5261/5291, date = 27-May-2029
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 18 (0.0sec)
+
+Report step 169/175 at day 5291/5475, date = 26-Jun-2029
+
+Starting time step 0, stepsize 31 days, at day 5291/5322, date = 26-Jun-2029
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 16 (0.0sec)
+
+Report step 170/175 at day 5322/5475, date = 27-Jul-2029
+
+Starting time step 0, stepsize 31 days, at day 5322/5353, date = 27-Jul-2029
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 19 (0.0sec)
+
+Report step 171/175 at day 5353/5475, date = 27-Aug-2029
+
+Starting time step 0, stepsize 30 days, at day 5353/5383, date = 27-Aug-2029
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 15 (0.0sec)
+
+Report step 172/175 at day 5383/5475, date = 26-Sep-2029
+
+Starting time step 0, stepsize 31 days, at day 5383/5414, date = 26-Sep-2029
+ Newton its= 2, linearizations= 3 (0.0sec), linear its= 17 (0.0sec)
+
+Report step 173/175 at day 5414/5475, date = 27-Oct-2029
+
+Starting time step 0, stepsize 30 days, at day 5414/5444, date = 27-Oct-2029
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 27 (0.0sec)
+
+Report step 174/175 at day 5444/5475, date = 26-Nov-2029
+
+Starting time step 0, stepsize 31 days, at day 5444/5475, date = 26-Nov-2029
+ Newton its= 3, linearizations= 4 (0.0sec), linear its= 23 (0.0sec)
+
+
+================    End of simulation     ===============
+
+Number of MPI processes:         1
+Threads per MPI process:         2
+Number of timesteps:           179
+Total time (seconds):            6.09 
+Solver time (seconds):           6.07 
+ Assembly time (seconds):        2.24 (Failed: 0.0; 0.0%)
+   Well assembly (seconds):      0.07 (Failed: 0.0; 0.0%)
+ Linear solve time (seconds):    0.46 (Failed: 0.0; 0.0%)
+   Linear setup (seconds):       0.04 (Failed: 0.0; 0.0%)
+ Update time (seconds):          1.95 (Failed: 0.0; 0.0%)
+ Pre/post step (seconds):        0.94 (Failed: 0.0; 0.0%)
+ Output write time (seconds):    0.36
+Overall Linearizations:        585    (Failed:   0; 0.0%)
+Overall Newton Iterations:     406    (Failed:   0; 0.0%)
+Overall Linear Iterations:    3338    (Failed:   0; 0.0%)
+

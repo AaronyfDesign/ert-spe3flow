@@ -1,0 +1,17 @@
+2024-10-09 02:35:45,335 - ert.ensemble_evaluator.dispatch - ert_ee_batch_dispatcher - DEBUG - processed 20 events in 0.009296s. 0 left in queue
+2024-10-09 02:35:47,340 - ert.ensemble_evaluator.evaluator - ert_ee_batch_dispatcher - INFO - Ensemble ran with maximum memory usage for a single realization job: 602112
+2024-10-09 02:35:47,342 - ert.ensemble_evaluator.dispatch - ert_ee_batch_dispatcher - DEBUG - processed 3 events in 0.004632s. 0 left in queue
+2024-10-09 02:35:47,345 - ert.ensemble_evaluator.monitor - ert_gui_simulation_thread - DEBUG - monitor-2034d7ff informing server monitor is done...
+2024-10-09 02:35:47,348 - ert.ensemble_evaluator.monitor - ert_gui_simulation_thread - DEBUG - monitor-2034d7ff informed server monitor is done
+2024-10-09 02:35:47,348 - ert.ensemble_evaluator.evaluator - ert_ee_run_server - DEBUG - got message from client: {'attributes': {'specversion': '1.0', 'id': '229ac5f8-85a4-11ef-be3c-eb69f6ee6264', 'source': '/ert/monitor/2034d7ff', 'type': 'com.equinor.ert.ee.user_done', 'time': '2024-10-08T18:35:47.347572+00:00'}, 'data': None}
+2024-10-09 02:35:47,349 - ert.ensemble_evaluator.evaluator - ert_ee_run_server - DEBUG - Client ('192.168.159.128', 54906) signalled done.
+2024-10-09 02:35:47,349 - ert.ensemble_evaluator.evaluator - ert_ee_run_server - DEBUG - Got done signal. 0 dispatchers to disconnect...
+2024-10-09 02:35:47,350 - ert.ensemble_evaluator.evaluator - ert_ee_run_server - DEBUG - Waiting for batcher to finish...
+2024-10-09 02:35:49,347 - ert.ensemble_evaluator.dispatch - ert_ee_batch_dispatcher - DEBUG - no events to be processed in queue
+2024-10-09 02:35:49,348 - ert.ensemble_evaluator.dispatch - ert_ee_batch_dispatcher - DEBUG - no events to be processed in queue
+2024-10-09 02:35:49,348 - ert.ensemble_evaluator.dispatch - ert_ee_batch_dispatcher - DEBUG - batcher finished normally
+2024-10-09 02:35:49,350 - ert.ensemble_evaluator.evaluator - ert_ee_run_server - DEBUG - Sending termination-message to clients...
+2024-10-09 02:35:49,352 - ert.ensemble_evaluator.monitor - ert_gui_simulation_thread - DEBUG - monitor-2034d7ff client received terminated
+2024-10-09 02:35:49,399 - ert.ensemble_evaluator.evaluator - ert_ee_run_server - DEBUG - Async server exiting.
+2024-10-09 02:35:49,399 - ert.ensemble_evaluator.evaluator - ert_ee_run_server - DEBUG - Server thread exiting.
+2024-10-09 02:35:49,399 - ert.ensemble_evaluator.evaluator - ert_gui_simulation_thread - DEBUG - Evaluator is done

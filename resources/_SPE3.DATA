@@ -86,12 +86,14 @@ TOPS
 
 PORO
 -- Constant porosity of 0.3 throughout all 324 grid cells
-   	324*0.13 /
+-- 	324*0.13 /
+    324*{{parameters.FIELD_PROPERTIES.POROSITY}} /
 
 PERMX
 -- The layers have horizontal (meaning x- and y-direction) permeability 
 -- of 130mD, 40mD, 20mD and 150, respectively, from top to bottom layer.
-	81*130 81*40 81*20 81*150 /
+--	81*130 81*40 81*20 81*150 /
+    81*130 81*{{100 * parameters.FIELD_PROPERTIES.X_1_MID_PERMEABILITY}} 82*{{100 * parameters.FIELD_PROPERTIES.X_2_MID_PERMEABILITY}} 81*150 /
 
 PERMY
 	81*130 81*40 81*20 81*150 /

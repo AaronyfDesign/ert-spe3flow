@@ -1,0 +1,73 @@
+{
+    "global_environment": {},
+    "config_path": "/home/aaronyf/download/ert/ert-spe3flow",
+    "config_file": "spe3.ert",
+    "jobList": [
+        {
+            "name": "TEMPLATE_RENDER",
+            "executable": "/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/templating/script/template_render.py",
+            "target_file": null,
+            "error_file": null,
+            "start_file": null,
+            "stdout": "TEMPLATE_RENDER.stdout.0",
+            "stderr": "TEMPLATE_RENDER.stderr.0",
+            "stdin": null,
+            "argList": [
+                "-i",
+                "parameters.json",
+                "-o",
+                "SPE3.DATA",
+                "-t",
+                "/home/aaronyf/download/ert/ert-spe3flow/resources/SPE3.DATA.jinja2"
+            ],
+            "environment": {
+                "_ERT_ITERATION_NUMBER": "0",
+                "_ERT_REALIZATION_NUMBER": "0",
+                "_ERT_RUNPATH": "/home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0"
+            },
+            "required_keywords": [],
+            "exec_env": null,
+            "max_running_minutes": null,
+            "min_arg": null,
+            "arg_types": [],
+            "max_arg": null
+        },
+        {
+            "name": "FLOW",
+            "executable": "/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/script/flow.py",
+            "target_file": null,
+            "error_file": null,
+            "start_file": null,
+            "stdout": "FLOW.stdout.1",
+            "stderr": "FLOW.stderr.1",
+            "stdin": null,
+            "argList": [
+                "SPE3",
+                "-v",
+                "default",
+                "-n",
+                "1",
+                ""
+            ],
+            "environment": {
+                "_ERT_ITERATION_NUMBER": "0",
+                "_ERT_REALIZATION_NUMBER": "0",
+                "_ERT_RUNPATH": "/home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0"
+            },
+            "required_keywords": [],
+            "exec_env": null,
+            "max_running_minutes": null,
+            "min_arg": null,
+            "arg_types": [],
+            "max_arg": null
+        }
+    ],
+    "run_id": "62f80e1f-c6ad-42bf-92aa-68b0010ebb91",
+    "ert_pid": "18118",
+    "ens_id": "6243e4d4",
+    "real_id": 0,
+    "dispatch_url": "wss://192.168.159.128:49248/dispatch",
+    "ee_token": "x64BqCI+N1IGz5jNTkflqTMRnmLBGmYQI+GrAMb7uvc4WMK8jDZS5c7xe9idvWidpSijfwKoL1WmwQKosmvyydHqF0JydQGT06Yt/JTX+2V+kBbF84iwO/5l5qqg3BTMX4Agy1YJHNEdcYfneHrK1c650Q4nnhz3O/W3AOYl++0=",
+    "ee_cert_path": "/home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0/.ee.pem",
+    "experiment_id": null
+}

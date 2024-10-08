@@ -1,0 +1,255 @@
+2024-10-09 01:58:49,209 - root - MainThread - DEBUG - ERT Plugin manager:
+	ert.shared.hook_implementations
+		<HookCaller 'help_links'>
+		<HookCaller 'installable_jobs'>
+		<HookCaller 'installable_workflow_jobs'>
+		<HookCaller 'job_documentation'>
+		<HookCaller 'legacy_ertscript_workflow'>
+		<HookCaller 'site_config_lines'>
+
+2024-10-09 01:58:49,210 - root - MainThread - DEBUG - Creating temporary directory for site-config
+2024-10-09 01:58:49,210 - root - MainThread - DEBUG - Temporary directory created: /tmp/tmpnmy50o55
+2024-10-09 01:58:49,210 - root - MainThread - DEBUG - Got no ecl100 config path from any plugins
+2024-10-09 01:58:49,210 - root - MainThread - DEBUG - Got no ecl300 config path from any plugins
+2024-10-09 01:58:49,210 - root - MainThread - DEBUG - Got no flow config path from any plugins
+2024-10-09 01:58:49,210 - root - MainThread - DEBUG - Got no rms config path from any plugins
+2024-10-09 01:58:49,215 - root - MainThread - DEBUG - Creating temporary site-config
+2024-10-09 01:58:49,215 - root - MainThread - DEBUG - Temporary site-config created: /tmp/tmpnmy50o55/site-config
+2024-10-09 01:58:49,215 - root - MainThread - DEBUG - Setting environment variable ERT_SITE_CONFIG=/tmp/tmpnmy50o55/site-config
+2024-10-09 01:58:49,215 - ert.__main__ - MainThread - INFO - Running ert with Namespace(config='spe3.ert', feature_scheduler=None, func=<function run_gui_wrapper at 0x7ffb40c68ca0>, logdir='./logs', mode='gui', read_only=False, verbose=False)
+2024-10-09 01:58:49,963 - ert.config.ert_config - MainThread - INFO - Content of the configuration file (spe3.ert):
+QUEUE_SYSTEM LOCAL
+QUEUE_OPTION LOCAL MAX_RUNNING 4
+RUNPATH spe3_out/realization-<IENS>/iter-<ITER>
+NUM_REALIZATIONS 12
+ECLBASE SPE3
+REFCASE <CONFIG_PATH>/resources/refcase/SPE3
+SUMMARY FOPR WOPT:PROD
+OBS_CONFIG obs.txt
+GEN_KW FIELD_PROPERTIES field_properties_priors
+
+2024-10-09 01:58:49,963 - ert.config.ert_config - MainThread - INFO - Content of the config_dict: {'DEFINE': [['<CONFIG_PATH>', '/home/aaronyf/download/ert/ert-spe3flow'], ['<CONFIG_FILE_BASE>', 'spe3'], ['<DATE>', '2024-10-09'], ['<CWD>', '/home/aaronyf/download/ert/ert-spe3flow'], ['<CONFIG_FILE>', 'spe3.ert']], 'JOB_SCRIPT': 'job_dispatch.py', 'QUEUE_SYSTEM': <QueueSystem.LOCAL: 'LOCAL'>, 'QUEUE_OPTION': [[<QueueSystem.LOCAL: 'LOCAL'>, 'MAX_RUNNING', '1'], [<QueueSystem.LOCAL: 'LOCAL'>, 'MAX_RUNNING', '4']], 'INSTALL_JOB': [['delete_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/delete_file'], ['careful_copy_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/careful_copy_file'], ['delete_directory', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/delete_directory'], ['copy_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/copy_file'], ['copy_directory', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/copy_directory'], ['make_symlink', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/make_symlink'], ['symlink', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/symlink'], ['move_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/move_file'], ['make_directory', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/make_directory'], ['eclipse300', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/eclipse300'], ['flow', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/flow'], ['eclipse100', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/eclipse100'], ['rms', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/rms'], ['template_render', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/templating/template_render'], ['MAKE_DIRECTORY', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/MAKE_DIRECTORY'], ['MAKE_SYMLINK', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/MAKE_SYMLINK'], ['MOVE_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/MOVE_FILE'], ['ECLIPSE300', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/ECLIPSE300'], ['DELETE_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/DELETE_FILE'], ['SYMLINK', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/SYMLINK'], ['ECLIPSE100', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/ECLIPSE100'], ['COPY_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/COPY_FILE'], ['FLOW', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/FLOW'], ['TEMPLATE_RENDER', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/TEMPLATE_RENDER'], ['DELETE_DIRECTORY', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/DELETE_DIRECTORY'], ['COPY_DIRECTORY', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/COPY_DIRECTORY'], ['RMS', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/RMS'], ['CAREFUL_COPY_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/CAREFUL_COPY_FILE']], 'RUNPATH': '/home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-<IENS>/iter-<ITER>', 'NUM_REALIZATIONS': 12, 'ECLBASE': 'SPE3', 'REFCASE': '/home/aaronyf/download/ert/ert-spe3flow/resources/refcase/SPE3', 'SUMMARY': [['FOPR', 'WOPT:PROD']], 'OBS_CONFIG': '/home/aaronyf/download/ert/ert-spe3flow/obs.txt', 'GEN_KW': [['FIELD_PROPERTIES', '/home/aaronyf/download/ert/ert-spe3flow/field_properties_priors']]}
+2024-10-09 01:58:49,970 - ert.config.ensemble_config - MainThread - INFO - Adding GenKwConfig config (of size 3) to parameter_configs
+2024-10-09 01:58:50,095 - ert.gui.main - MainThread - INFO - Config contains forward model step TEMPLATE_RENDER
+2024-10-09 01:58:50,096 - ert.gui.main - MainThread - INFO - Config contains forward model step FLOW
+2024-10-09 01:58:50,155 - ert.shared.exporter - MainThread - ERROR - Export not available because CSV_EXPORT2 is not installed.
+2024-10-09 01:58:56,290 - ert.cli.model_factory - MainThread - INFO - Initiating experiment
+2024-10-09 01:58:56,292 - ert.enkf_main - MainThread - INFO - To repeat this experiment, add the following random seed to your config file:
+2024-10-09 01:58:56,292 - ert.enkf_main - MainThread - INFO - RANDOM_SEED 316265731077757287146694050640597947041
+2024-10-09 01:58:59,264 - ert.gui.simulation.queue_emitter - MainThread - DEBUG - init QueueEmitter
+2024-10-09 01:58:59,264 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - tracking...
+2024-10-09 01:58:59,305 - ert.enkf_main - ert_gui_simulation_thread - INFO - To repeat this experiment, add the following random seed to your config file:
+2024-10-09 01:58:59,305 - ert.enkf_main - ert_gui_simulation_thread - INFO - RANDOM_SEED 138446070989776765322551219316657177974
+2024-10-09 01:58:59,306 - ert.config.gen_kw_config - ert_gui_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 0
+2024-10-09 01:58:59,314 - ert.enkf_main - ert_gui_simulation_thread - DEBUG - sample_prior() time_used 0.0090s
+2024-10-09 01:58:59,327 - ert.enkf_main - ert_gui_simulation_thread - DEBUG - create_run_path() time_used 0.0122s
+2024-10-09 01:58:59,788 - ert.scheduler - LegacyEnsemble - INFO - Experiment ran on ORCHESTRATOR: scheduler on LOCAL queue
+2024-10-09 01:58:59,895 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit FullSnapshotEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=1, progress=0.0, indeterminate=False, iteration=0, snapshot=<ert.ensemble_evaluator.snapshot.Snapshot object at 0x7ffb1d000400>)
+2024-10-09 01:58:59,907 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 0 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0'
+2024-10-09 01:59:01,333 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=1, progress=0.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7ffb1c793fd0>)
+2024-10-09 01:59:01,341 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=1, progress=0.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7ffb1d000550>)
+2024-10-09 01:59:02,613 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 0 finished with returncode=0
+2024-10-09 01:59:02,615 - ert.callbacks - LegacyEnsemble - DEBUG - Starting to load response: summary
+2024-10-09 01:59:02,623 - ert.callbacks - LegacyEnsemble - DEBUG - Loaded summary
+2024-10-09 01:59:02,632 - ert.callbacks - LegacyEnsemble - DEBUG - Saved summary to storage
+2024-10-09 01:59:02,634 - ert.scheduler.local_driver - LegacyEnsemble - INFO - All realization tasks finished
+2024-10-09 01:59:02,636 - ert.scheduler - LegacyEnsemble - INFO - Experiment ran on QUEUESYSTEM: LOCAL
+2024-10-09 01:59:03,347 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=1, progress=1.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7ffb2c99b580>)
+2024-10-09 01:59:03,350 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=1, progress=1.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7ffb1c7936d0>)
+2024-10-09 01:59:05,407 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit EndEvent(failed=False, failed_msg='')
+2024-10-09 01:59:05,407 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - got end event
+2024-10-09 01:59:05,407 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - tracking done.
+2024-10-09 01:59:05,409 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - stopping...
+2024-10-09 01:59:07,930 - ert.gui.tools.plot.plot_window - MainThread - INFO - PlotWindow __init__
+2024-10-09 01:59:07,953 - ert.gui.tools.plot.plot_window - MainThread - ERROR -  Please report this error and try restarting the application.Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/routing.py", line 269, in app
+    solved_result = await solve_dependencies(
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/dependencies/utils.py", line 602, in solve_dependencies
+    solved = await run_in_threadpool(call, **sub_values)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/ert/dark_storage/enkf.py", line 22, in get_storage
+    return (_storage := open_storage(os.environ["ERT_STORAGE_ENS_PATH"]))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/__init__.py", line 34, in open_storage
+    return LocalStorage(Path(path), Mode(mode))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/local_storage.py", line 114, in __init__
+    raise RuntimeError(
+RuntimeError: Cannot open storage '/home/aaronyf/download/ert/ert-spe3flow/storage' in read-only mode: Storage version 6 is newer than the current version 5, upgrade ERT to continue, or run with a different ENSPATH
+ from url: http://127.0.0.1:51828/experiments.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ert/gui/tools/plot/plot_window.py", line 103, in __init__
+    self._key_definitions = self._api.all_data_type_keys()
+  File "/usr/local/lib/python3.8/dist-packages/ert/gui/tools/plot/plot_api.py", line 93, in all_data_type_keys
+    self._check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/ert/gui/tools/plot/plot_api.py", line 76, in _check_response
+    raise httpx.RequestError(
+httpx.RequestError:  Please report this error and try restarting the application.Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/routing.py", line 269, in app
+    solved_result = await solve_dependencies(
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/dependencies/utils.py", line 602, in solve_dependencies
+    solved = await run_in_threadpool(call, **sub_values)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/ert/dark_storage/enkf.py", line 22, in get_storage
+    return (_storage := open_storage(os.environ["ERT_STORAGE_ENS_PATH"]))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/__init__.py", line 34, in open_storage
+    return LocalStorage(Path(path), Mode(mode))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/local_storage.py", line 114, in __init__
+    raise RuntimeError(
+RuntimeError: Cannot open storage '/home/aaronyf/download/ert/ert-spe3flow/storage' in read-only mode: Storage version 6 is newer than the current version 5, upgrade ERT to continue, or run with a different ENSPATH
+ from url: http://127.0.0.1:51828/experiments.
+2024-10-09 01:59:11,813 - ert.gui.tools.plot.plot_window - MainThread - ERROR -  Please report this error and try restarting the application.Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/routing.py", line 269, in app
+    solved_result = await solve_dependencies(
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/dependencies/utils.py", line 602, in solve_dependencies
+    solved = await run_in_threadpool(call, **sub_values)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/ert/dark_storage/enkf.py", line 22, in get_storage
+    return (_storage := open_storage(os.environ["ERT_STORAGE_ENS_PATH"]))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/__init__.py", line 34, in open_storage
+    return LocalStorage(Path(path), Mode(mode))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/local_storage.py", line 114, in __init__
+    raise RuntimeError(
+RuntimeError: Cannot open storage '/home/aaronyf/download/ert/ert-spe3flow/storage' in read-only mode: Storage version 6 is newer than the current version 5, upgrade ERT to continue, or run with a different ENSPATH
+ from url: http://127.0.0.1:51828/experiments.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ert/gui/tools/plot/plot_window.py", line 139, in __init__
+    ensembles = self._api.get_all_ensembles()
+  File "/usr/local/lib/python3.8/dist-packages/ert/gui/tools/plot/plot_api.py", line 135, in get_all_ensembles
+    return self._get_all_ensembles()
+  File "/usr/local/lib/python3.8/dist-packages/ert/gui/tools/plot/plot_api.py", line 51, in _get_all_ensembles
+    self._check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/ert/gui/tools/plot/plot_api.py", line 76, in _check_response
+    raise httpx.RequestError(
+httpx.RequestError:  Please report this error and try restarting the application.Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/routing.py", line 269, in app
+    solved_result = await solve_dependencies(
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/dependencies/utils.py", line 602, in solve_dependencies
+    solved = await run_in_threadpool(call, **sub_values)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/ert/dark_storage/enkf.py", line 22, in get_storage
+    return (_storage := open_storage(os.environ["ERT_STORAGE_ENS_PATH"]))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/__init__.py", line 34, in open_storage
+    return LocalStorage(Path(path), Mode(mode))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/local_storage.py", line 114, in __init__
+    raise RuntimeError(
+RuntimeError: Cannot open storage '/home/aaronyf/download/ert/ert-spe3flow/storage' in read-only mode: Storage version 6 is newer than the current version 5, upgrade ERT to continue, or run with a different ENSPATH
+ from url: http://127.0.0.1:51828/experiments.
+2024-10-09 01:59:12,928 - ert.gui.tools.plot.plot_window - MainThread - INFO - PlotWindow __init__ done. time=4.998347024000395
+2024-10-09 01:59:21,337 - root - MainThread - DEBUG - Resetting environment variable ERT_SITE_CONFIG
+2024-10-09 01:59:21,338 - root - MainThread - DEBUG - Deleting temporary directory for site-config
+2024-10-09 01:59:21,338 - root - MainThread - INFO - Peak memory use: 373160 kB

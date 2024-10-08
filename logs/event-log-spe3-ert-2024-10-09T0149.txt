@@ -1,0 +1,6 @@
+2024-10-09 01:49:48,993 - ert.event_log - ert_cli_simulation_thread - DEBUG - connecting to new monitor...
+2024-10-09 01:49:49,103 - ert.event_log - ert_cli_simulation_thread - DEBUG - connected
+2024-10-09 01:49:52,555 - ert.event_log - ert_cli_simulation_thread - DEBUG - observed evaluation stopped event, signal done
+2024-10-09 01:49:54,567 - ert.event_log - ert_cli_simulation_thread - DEBUG - got terminator event
+2024-10-09 01:49:54,609 - ert.event_log - ert_cli_simulation_thread - DEBUG - observed that model was finished, waiting tasks completion...
+2024-10-09 01:49:54,610 - ert.event_log - ert_cli_simulation_thread - DEBUG - tasks complete

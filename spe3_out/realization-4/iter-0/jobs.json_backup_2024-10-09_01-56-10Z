@@ -1,0 +1,69 @@
+{
+  "global_environment": {
+    "_ERT_SIMULATION_MODE": "ensemble_experiment",
+    "_ERT_EXPERIMENT_ID": "13dc17d0-edbe-4720-98d3-1aba7155fcff",
+    "_ERT_ENSEMBLE_ID": "d1e2ebac-32f8-4923-ae48-0a11787cb671"
+  },
+  "config_path": "/home/aaronyf/download/ert/ert-spe3flow",
+  "config_file": "spe3.ert",
+  "jobList": [
+    {
+      "name": "TEMPLATE_RENDER",
+      "executable": "/home/aaronyf/download/ert/dev_ert/lib/python3.8/site-packages/ert/resources/forward-models/templating/script/template_render.py",
+      "target_file": null,
+      "error_file": null,
+      "start_file": null,
+      "stdout": "TEMPLATE_RENDER.stdout.0",
+      "stderr": "TEMPLATE_RENDER.stderr.0",
+      "stdin": null,
+      "argList": [
+        "-i",
+        "parameters.json",
+        "-o",
+        "SPE3.DATA",
+        "-t",
+        "/home/aaronyf/download/ert/ert-spe3flow/resources/SPE3.DATA.jinja2"
+      ],
+      "environment": {
+        "_ERT_ITERATION_NUMBER": "0",
+        "_ERT_REALIZATION_NUMBER": "4",
+        "_ERT_RUNPATH": "/home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-4/iter-0"
+      },
+      "exec_env": null,
+      "max_running_minutes": null
+    },
+    {
+      "name": "FLOW",
+      "executable": "/home/aaronyf/download/ert/dev_ert/lib/python3.8/site-packages/ert/resources/forward-models/res/script/flow.py",
+      "target_file": null,
+      "error_file": null,
+      "start_file": null,
+      "stdout": "FLOW.stdout.1",
+      "stderr": "FLOW.stderr.1",
+      "stdin": null,
+      "argList": [
+        "SPE3",
+        "-v",
+        "default",
+        "-n",
+        "1",
+        ""
+      ],
+      "environment": {
+        "_ERT_ITERATION_NUMBER": "0",
+        "_ERT_REALIZATION_NUMBER": "4",
+        "_ERT_RUNPATH": "/home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-4/iter-0"
+      },
+      "exec_env": null,
+      "max_running_minutes": null
+    }
+  ],
+  "run_id": "d1e2ebac-32f8-4923-ae48-0a11787cb671",
+  "ert_pid": "16872",
+  "ens_id": "13dc17d0-edbe-4720-98d3-1aba7155fcff",
+  "real_id": 4,
+  "dispatch_url": "wss://192.168.159.128:50534/dispatch",
+  "ee_token": "wcMt9gnS1A0ns7yW9hoqTQglANfOhYpgyCCG+P5jvJuyjWgWGiNLdWnr/AZQhXZjg7/+D3BDWClN9lfK5d5MF3PsARLssqH9vQPmWp3yLvOvq+FuhRsTOFZH4drQobQpaknHEGF6G6oy0GYQtZFox7W3NQUr2qoLxHhFd09xQDE=",
+  "ee_cert_path": "/home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-4/iter-0/.ee.pem",
+  "experiment_id": null
+}

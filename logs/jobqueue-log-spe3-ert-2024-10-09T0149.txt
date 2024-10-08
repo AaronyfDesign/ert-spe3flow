@@ -1,0 +1,22 @@
+2024-10-09 01:49:48,991 - ert.scheduler - LegacyEnsemble - INFO - Experiment ran on ORCHESTRATOR: scheduler on LOCAL queue
+2024-10-09 01:49:49,106 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 0 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0'
+2024-10-09 01:49:50,068 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 0 finished with returncode=-9
+2024-10-09 01:49:50,069 - ert.scheduler.job - LegacyEnsemble - WARNING - Realization 0 failed, resubmitting for attempt 2 of 2
+2024-10-09 01:49:50,070 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 0 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0'
+2024-10-09 01:49:51,040 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 0 finished with returncode=-9
+2024-10-09 01:49:51,042 - ert.scheduler.job - LegacyEnsemble - ERROR - Realization: 0 failed after reaching max submit (2):
+	
+2024-10-09 01:49:51,042 - ert.scheduler.job - LegacyEnsemble - ERROR - job FLOW failed with: 'Process exited with status code 1'
+	stderr file: '/home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0/FLOW.stderr.1',
+	its contents:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/script/flow.py", line 9, in <module>
+    run(config, [arg for arg in sys.argv[1:] if len(arg) > 0])
+  File "/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/script/ecl_run.py", line 552, in run
+    run.runEclipse()
+  File "/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/script/ecl_run.py", line 388, in runEclipse
+    raise subprocess.CalledProcessError(return_code, command)
+subprocess.CalledProcessError: Command '['/usr/bin/flow', 'SPE3']' returned non-zero exit status 1.
+
+2024-10-09 01:49:51,044 - ert.scheduler.local_driver - LegacyEnsemble - INFO - All realization tasks finished
+2024-10-09 01:49:51,045 - ert.scheduler - LegacyEnsemble - INFO - Experiment ran on QUEUESYSTEM: LOCAL

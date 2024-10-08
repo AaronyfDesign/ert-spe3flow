@@ -1,0 +1,88 @@
+**********************************************************************
+*                                                                    *
+*                        This is flow 2023.10                        *
+*                                                                    *
+* Flow is a simulator for fully implicit three-phase black-oil flow, *
+*             including solvent and polymer capabilities.            *
+*          For more information, see https://opm-project.org         *
+*                                                                    *
+**********************************************************************
+
+Using 1 MPI processes with 2 OMP threads on each 
+
+Reading deck file 'SPE3.DATA'
+    0 Reading RUNSPEC  in SPE3.DATA line 18
+    1 Reading TITLE    in SPE3.DATA line 21
+    2 Reading DIMENS   in SPE3.DATA line 23
+    3 Reading OIL      in SPE3.DATA line 25
+    4 Reading GAS      in SPE3.DATA line 26
+    5 Reading WATER    in SPE3.DATA line 27
+    6 Reading VAPOIL   in SPE3.DATA line 28
+    7 Reading DISGAS   in SPE3.DATA line 29
+    8 Reading FIELD    in SPE3.DATA line 31
+    9 Reading START    in SPE3.DATA line 33
+   10 Reading WELLDIMS in SPE3.DATA line 36
+   11 Reading TABDIMS  in SPE3.DATA line 47
+   12 Reading EQLDIMS  in SPE3.DATA line 52
+   13 Reading UNIFOUT  in SPE3.DATA line 56
+   14 Reading GRID     in SPE3.DATA line 58
+   15 Reading INIT     in SPE3.DATA line 65
+   16 Reading NOECHO   in SPE3.DATA line 70
+   17 Reading DX       in SPE3.DATA line 71
+   18 Reading DY       in SPE3.DATA line 74
+   19 Reading DZ       in SPE3.DATA line 77
+   20 Reading TOPS     in SPE3.DATA line 82
+   21 Reading PORO     in SPE3.DATA line 91
+   22 Reading PERMX    in SPE3.DATA line 96
+   23 Reading PERMY    in SPE3.DATA line 102
+   24 Reading PERMZ    in SPE3.DATA line 105
+   25 Reading ECHO     in SPE3.DATA line 109
+   26 Reading PROPS    in SPE3.DATA line 111
+   27 Reading ROCK     in SPE3.DATA line 114
+   28 Reading SGOF     in SPE3.DATA line 122
+   29 Reading SWOF     in SPE3.DATA line 153
+   30 Reading DENSITY  in SPE3.DATA line 191
+   31 Reading PVTW     in SPE3.DATA line 196
+   32 Reading PVTO     in SPE3.DATA line 219
+   33 Reading PVTG     in SPE3.DATA line 289
+   34 Reading SOLUTION in SPE3.DATA line 313
+   35 Reading EQUIL    in SPE3.DATA line 315
+   36 Reading SUMMARY  in SPE3.DATA line 340
+   37 Reading WOPR     in SPE3.DATA line 342
+   38 Reading FOPR     in SPE3.DATA line 346
+   39 Reading WOPT     in SPE3.DATA line 348
+   40 Reading FOPT     in SPE3.DATA line 352
+   41 Reading BOSAT    in SPE3.DATA line 354
+   42 Reading BRS      in SPE3.DATA line 359
+   43 Reading WBHP     in SPE3.DATA line 369
+   44 Reading WGIR     in SPE3.DATA line 373
+   45 Reading WGPR     in SPE3.DATA line 381
+   46 Reading WOIR     in SPE3.DATA line 389
+   47 Reading WWIR     in SPE3.DATA line 405
+   48 Reading WWPR     in SPE3.DATA line 413
+   49 Reading SCHEDULE in SPE3.DATA line 422
+   50 Reading RPTRST   in SPE3.DATA line 424
+   51 Reading WELSPECS in SPE3.DATA line 435
+   52 Reading COMPDAT  in SPE3.DATA line 447
+   53 Reading WCONPROD in SPE3.DATA line 457
+   54 Reading WCONINJE in SPE3.DATA line 465
+   55 Reading TSTEP    in SPE3.DATA line 473
+   56 Reading WCONINJE in SPE3.DATA line 489
+   57 Reading TSTEP    in SPE3.DATA line 494
+
+Warning: Unsupported keywords or keyword items:
+
+  NOECHO: keyword not supported
+  In file: SPE3.DATA, line 70
+
+  ECHO: keyword not supported
+  In file: SPE3.DATA, line 109
+
+Creating grid from keywords DX, DY, DZ and TOPS
+
+Error: 
+An error occurred while creating the reservoir properties
+Internal error: Fundamental error with keyword: PERMX at: SPE3.DATA, line: 96 got 325 elements - expected : 324
+
+
+Error: Unrecoverable errors while loading input: Fundamental error with keyword: PERMX at: SPE3.DATA, line: 96 got 325 elements - expected : 324

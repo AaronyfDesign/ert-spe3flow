@@ -1,0 +1,422 @@
+2024-10-09 01:54:03,937 - root - MainThread - DEBUG - ERT Plugin manager:
+	ert.shared.hook_implementations
+		<HookCaller 'help_links'>
+		<HookCaller 'installable_jobs'>
+		<HookCaller 'installable_workflow_jobs'>
+		<HookCaller 'job_documentation'>
+		<HookCaller 'legacy_ertscript_workflow'>
+		<HookCaller 'site_config_lines'>
+
+2024-10-09 01:54:03,937 - root - MainThread - DEBUG - Creating temporary directory for site-config
+2024-10-09 01:54:03,937 - root - MainThread - DEBUG - Temporary directory created: /tmp/tmp960fqwgn
+2024-10-09 01:54:03,938 - root - MainThread - DEBUG - Got no ecl100 config path from any plugins
+2024-10-09 01:54:03,938 - root - MainThread - DEBUG - Got no ecl300 config path from any plugins
+2024-10-09 01:54:03,938 - root - MainThread - DEBUG - Got no flow config path from any plugins
+2024-10-09 01:54:03,938 - root - MainThread - DEBUG - Got no rms config path from any plugins
+2024-10-09 01:54:03,943 - root - MainThread - DEBUG - Creating temporary site-config
+2024-10-09 01:54:03,943 - root - MainThread - DEBUG - Temporary site-config created: /tmp/tmp960fqwgn/site-config
+2024-10-09 01:54:03,943 - root - MainThread - DEBUG - Setting environment variable ERT_SITE_CONFIG=/tmp/tmp960fqwgn/site-config
+2024-10-09 01:54:03,943 - ert.__main__ - MainThread - INFO - Running ert with Namespace(color_always=False, config='spe3.ert', current_ensemble='default', disable_monitoring=False, feature_scheduler=None, func=<function run_cli at 0x7fcda4cbe430>, logdir='./logs', mode='test_run', port_range=None, read_only=False, verbose=False)
+2024-10-09 01:54:04,064 - ert.config.ert_config - MainThread - INFO - Content of the configuration file (spe3.ert):
+QUEUE_SYSTEM LOCAL
+QUEUE_OPTION LOCAL MAX_RUNNING 4
+RUNPATH spe3_out/realization-<IENS>/iter-<ITER>
+NUM_REALIZATIONS 12
+ECLBASE SPE3
+REFCASE <CONFIG_PATH>/resources/refcase/SPE3
+SUMMARY FOPR WOPT:PROD
+OBS_CONFIG obs.txt
+GEN_KW FIELD_PROPERTIES field_properties_priors
+
+2024-10-09 01:54:04,064 - ert.config.ert_config - MainThread - INFO - Content of the config_dict: {'DEFINE': [['<CONFIG_PATH>', '/home/aaronyf/download/ert/ert-spe3flow'], ['<CONFIG_FILE_BASE>', 'spe3'], ['<DATE>', '2024-10-09'], ['<CWD>', '/home/aaronyf/download/ert/ert-spe3flow'], ['<CONFIG_FILE>', 'spe3.ert']], 'JOB_SCRIPT': 'job_dispatch.py', 'QUEUE_SYSTEM': <QueueSystem.LOCAL: 'LOCAL'>, 'QUEUE_OPTION': [[<QueueSystem.LOCAL: 'LOCAL'>, 'MAX_RUNNING', '1'], [<QueueSystem.LOCAL: 'LOCAL'>, 'MAX_RUNNING', '4']], 'INSTALL_JOB': [['delete_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/delete_file'], ['careful_copy_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/careful_copy_file'], ['delete_directory', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/delete_directory'], ['copy_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/copy_file'], ['copy_directory', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/copy_directory'], ['make_symlink', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/make_symlink'], ['symlink', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/symlink'], ['move_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/move_file'], ['make_directory', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/make_directory'], ['eclipse300', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/eclipse300'], ['flow', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/flow'], ['eclipse100', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/eclipse100'], ['rms', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/rms'], ['template_render', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/templating/template_render'], ['MAKE_DIRECTORY', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/MAKE_DIRECTORY'], ['MAKE_SYMLINK', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/MAKE_SYMLINK'], ['MOVE_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/MOVE_FILE'], ['ECLIPSE300', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/ECLIPSE300'], ['DELETE_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/DELETE_FILE'], ['SYMLINK', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/SYMLINK'], ['ECLIPSE100', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/ECLIPSE100'], ['COPY_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/COPY_FILE'], ['FLOW', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/FLOW'], ['TEMPLATE_RENDER', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/TEMPLATE_RENDER'], ['DELETE_DIRECTORY', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/DELETE_DIRECTORY'], ['COPY_DIRECTORY', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/COPY_DIRECTORY'], ['RMS', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/RMS'], ['CAREFUL_COPY_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/CAREFUL_COPY_FILE']], 'RUNPATH': '/home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-<IENS>/iter-<ITER>', 'NUM_REALIZATIONS': 12, 'ECLBASE': 'SPE3', 'REFCASE': '/home/aaronyf/download/ert/ert-spe3flow/resources/refcase/SPE3', 'SUMMARY': [['FOPR', 'WOPT:PROD']], 'OBS_CONFIG': '/home/aaronyf/download/ert/ert-spe3flow/obs.txt', 'GEN_KW': [['FIELD_PROPERTIES', '/home/aaronyf/download/ert/ert-spe3flow/field_properties_priors']]}
+2024-10-09 01:54:04,070 - ert.config.ensemble_config - MainThread - INFO - Adding GenKwConfig config (of size 3) to parameter_configs
+2024-10-09 01:54:04,341 - ert.cli.main - MainThread - INFO - Config contains forward model step TEMPLATE_RENDER
+2024-10-09 01:54:04,342 - ert.cli.main - MainThread - INFO - Config contains forward model step FLOW
+2024-10-09 01:54:04,348 - ert.cli.model_factory - MainThread - INFO - Initiating experiment
+2024-10-09 01:54:04,348 - ert.enkf_main - MainThread - INFO - To repeat this experiment, add the following random seed to your config file:
+2024-10-09 01:54:04,348 - ert.enkf_main - MainThread - INFO - RANDOM_SEED 10481798591332712621246859183769903419
+2024-10-09 01:54:04,835 - ert.cli.main - MainThread - WARNING - ERT is running in an existing runpath
+2024-10-09 01:54:04,862 - ert.enkf_main - ert_cli_simulation_thread - INFO - To repeat this experiment, add the following random seed to your config file:
+2024-10-09 01:54:04,862 - ert.enkf_main - ert_cli_simulation_thread - INFO - RANDOM_SEED 238645731089601303362572124022651198048
+2024-10-09 01:54:04,863 - ert.config.gen_kw_config - ert_cli_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 0
+2024-10-09 01:54:04,869 - ert.enkf_main - ert_cli_simulation_thread - DEBUG - sample_prior() time_used 0.0069s
+2024-10-09 01:54:04,881 - ert.enkf_main - ert_cli_simulation_thread - DEBUG - create_run_path() time_used 0.0112s
+2024-10-09 01:54:05,340 - ert.scheduler - LegacyEnsemble - INFO - Experiment ran on ORCHESTRATOR: scheduler on LOCAL queue
+2024-10-09 01:54:05,452 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 0 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0'
+2024-10-09 01:54:10,024 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 0 finished with returncode=0
+2024-10-09 01:54:10,025 - ert.callbacks - LegacyEnsemble - DEBUG - Starting to load response: summary
+2024-10-09 01:54:10,313 - ert.callbacks - LegacyEnsemble - DEBUG - Loaded summary
+2024-10-09 01:54:10,551 - ert.callbacks - LegacyEnsemble - DEBUG - Saved summary to storage
+2024-10-09 01:54:10,553 - ert.scheduler.local_driver - LegacyEnsemble - INFO - All realization tasks finished
+2024-10-09 01:54:10,553 - ert.scheduler - LegacyEnsemble - INFO - Experiment ran on QUEUESYSTEM: LOCAL
+2024-10-09 01:54:12,965 - root - MainThread - DEBUG - Resetting environment variable ERT_SITE_CONFIG
+2024-10-09 01:54:12,965 - root - MainThread - DEBUG - Deleting temporary directory for site-config
+2024-10-09 01:54:12,965 - root - MainThread - INFO - Peak memory use: 262240 kB
+2024-10-09 01:54:19,919 - root - MainThread - DEBUG - ERT Plugin manager:
+	ert.shared.hook_implementations
+		<HookCaller 'help_links'>
+		<HookCaller 'installable_jobs'>
+		<HookCaller 'installable_workflow_jobs'>
+		<HookCaller 'job_documentation'>
+		<HookCaller 'legacy_ertscript_workflow'>
+		<HookCaller 'site_config_lines'>
+
+2024-10-09 01:54:19,932 - root - MainThread - DEBUG - Creating temporary directory for site-config
+2024-10-09 01:54:19,933 - root - MainThread - DEBUG - Temporary directory created: /tmp/tmpbkbz_7jn
+2024-10-09 01:54:19,933 - root - MainThread - DEBUG - Got no ecl100 config path from any plugins
+2024-10-09 01:54:19,933 - root - MainThread - DEBUG - Got no ecl300 config path from any plugins
+2024-10-09 01:54:19,933 - root - MainThread - DEBUG - Got no flow config path from any plugins
+2024-10-09 01:54:19,933 - root - MainThread - DEBUG - Got no rms config path from any plugins
+2024-10-09 01:54:19,938 - root - MainThread - DEBUG - Creating temporary site-config
+2024-10-09 01:54:19,938 - root - MainThread - DEBUG - Temporary site-config created: /tmp/tmpbkbz_7jn/site-config
+2024-10-09 01:54:19,939 - root - MainThread - DEBUG - Setting environment variable ERT_SITE_CONFIG=/tmp/tmpbkbz_7jn/site-config
+2024-10-09 01:54:19,939 - ert.__main__ - MainThread - INFO - Running ert with Namespace(config='spe3.ert', feature_scheduler=None, func=<function run_gui_wrapper at 0x7f3f8ec02ca0>, logdir='./logs', mode='gui', read_only=False, verbose=False)
+2024-10-09 01:54:20,681 - ert.config.ert_config - MainThread - INFO - Content of the configuration file (spe3.ert):
+QUEUE_SYSTEM LOCAL
+QUEUE_OPTION LOCAL MAX_RUNNING 4
+RUNPATH spe3_out/realization-<IENS>/iter-<ITER>
+NUM_REALIZATIONS 12
+ECLBASE SPE3
+REFCASE <CONFIG_PATH>/resources/refcase/SPE3
+SUMMARY FOPR WOPT:PROD
+OBS_CONFIG obs.txt
+GEN_KW FIELD_PROPERTIES field_properties_priors
+
+2024-10-09 01:54:20,681 - ert.config.ert_config - MainThread - INFO - Content of the config_dict: {'DEFINE': [['<CONFIG_PATH>', '/home/aaronyf/download/ert/ert-spe3flow'], ['<CONFIG_FILE_BASE>', 'spe3'], ['<DATE>', '2024-10-09'], ['<CWD>', '/home/aaronyf/download/ert/ert-spe3flow'], ['<CONFIG_FILE>', 'spe3.ert']], 'JOB_SCRIPT': 'job_dispatch.py', 'QUEUE_SYSTEM': <QueueSystem.LOCAL: 'LOCAL'>, 'QUEUE_OPTION': [[<QueueSystem.LOCAL: 'LOCAL'>, 'MAX_RUNNING', '1'], [<QueueSystem.LOCAL: 'LOCAL'>, 'MAX_RUNNING', '4']], 'INSTALL_JOB': [['delete_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/delete_file'], ['careful_copy_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/careful_copy_file'], ['delete_directory', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/delete_directory'], ['copy_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/copy_file'], ['copy_directory', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/copy_directory'], ['make_symlink', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/make_symlink'], ['symlink', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/symlink'], ['move_file', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/move_file'], ['make_directory', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/shell/make_directory'], ['eclipse300', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/eclipse300'], ['flow', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/flow'], ['eclipse100', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/eclipse100'], ['rms', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/rms'], ['template_render', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/templating/template_render'], ['MAKE_DIRECTORY', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/MAKE_DIRECTORY'], ['MAKE_SYMLINK', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/MAKE_SYMLINK'], ['MOVE_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/MOVE_FILE'], ['ECLIPSE300', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/ECLIPSE300'], ['DELETE_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/DELETE_FILE'], ['SYMLINK', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/SYMLINK'], ['ECLIPSE100', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/ECLIPSE100'], ['COPY_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/COPY_FILE'], ['FLOW', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/FLOW'], ['TEMPLATE_RENDER', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/TEMPLATE_RENDER'], ['DELETE_DIRECTORY', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/DELETE_DIRECTORY'], ['COPY_DIRECTORY', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/COPY_DIRECTORY'], ['RMS', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/RMS'], ['CAREFUL_COPY_FILE', '/usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/old_style/CAREFUL_COPY_FILE']], 'RUNPATH': '/home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-<IENS>/iter-<ITER>', 'NUM_REALIZATIONS': 12, 'ECLBASE': 'SPE3', 'REFCASE': '/home/aaronyf/download/ert/ert-spe3flow/resources/refcase/SPE3', 'SUMMARY': [['FOPR', 'WOPT:PROD']], 'OBS_CONFIG': '/home/aaronyf/download/ert/ert-spe3flow/obs.txt', 'GEN_KW': [['FIELD_PROPERTIES', '/home/aaronyf/download/ert/ert-spe3flow/field_properties_priors']]}
+2024-10-09 01:54:20,688 - ert.config.ensemble_config - MainThread - INFO - Adding GenKwConfig config (of size 3) to parameter_configs
+2024-10-09 01:54:20,812 - ert.gui.main - MainThread - INFO - Config contains forward model step TEMPLATE_RENDER
+2024-10-09 01:54:20,812 - ert.gui.main - MainThread - INFO - Config contains forward model step FLOW
+2024-10-09 01:54:20,870 - ert.shared.exporter - MainThread - ERROR - Export not available because CSV_EXPORT2 is not installed.
+2024-10-09 01:54:58,325 - ert.cli.model_factory - MainThread - INFO - Initiating experiment
+2024-10-09 01:54:58,326 - ert.enkf_main - MainThread - INFO - To repeat this experiment, add the following random seed to your config file:
+2024-10-09 01:54:58,327 - ert.enkf_main - MainThread - INFO - RANDOM_SEED 286615353816281136372683277348761295026
+2024-10-09 01:55:01,098 - ert.gui.simulation.queue_emitter - MainThread - DEBUG - init QueueEmitter
+2024-10-09 01:55:01,098 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - tracking...
+2024-10-09 01:55:01,151 - ert.enkf_main - ert_gui_simulation_thread - INFO - To repeat this experiment, add the following random seed to your config file:
+2024-10-09 01:55:01,152 - ert.enkf_main - ert_gui_simulation_thread - INFO - RANDOM_SEED 306142065230263891008974297217334064494
+2024-10-09 01:55:01,152 - ert.config.gen_kw_config - ert_gui_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 0
+2024-10-09 01:55:01,160 - ert.enkf_main - ert_gui_simulation_thread - DEBUG - sample_prior() time_used 0.0078s
+2024-10-09 01:55:01,176 - ert.enkf_main - ert_gui_simulation_thread - DEBUG - create_run_path() time_used 0.0159s
+2024-10-09 01:55:01,639 - ert.scheduler - LegacyEnsemble - INFO - Experiment ran on ORCHESTRATOR: scheduler on LOCAL queue
+2024-10-09 01:55:01,741 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 0 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0'
+2024-10-09 01:55:01,760 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit FullSnapshotEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=1, progress=0.0, indeterminate=False, iteration=0, snapshot=<ert.ensemble_evaluator.snapshot.Snapshot object at 0x7f3f7c0f10a0>)
+2024-10-09 01:55:03,184 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=1, progress=0.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f7c29e910>)
+2024-10-09 01:55:03,187 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=1, progress=0.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f7c015610>)
+2024-10-09 01:55:07,118 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 0 finished with returncode=0
+2024-10-09 01:55:07,119 - ert.callbacks - LegacyEnsemble - DEBUG - Starting to load response: summary
+2024-10-09 01:55:07,131 - ert.callbacks - LegacyEnsemble - DEBUG - Loaded summary
+2024-10-09 01:55:07,141 - ert.callbacks - LegacyEnsemble - DEBUG - Saved summary to storage
+2024-10-09 01:55:07,142 - ert.scheduler.local_driver - LegacyEnsemble - INFO - All realization tasks finished
+2024-10-09 01:55:07,144 - ert.scheduler - LegacyEnsemble - INFO - Experiment ran on QUEUESYSTEM: LOCAL
+2024-10-09 01:55:07,195 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=1, progress=1.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f7c015d60>)
+2024-10-09 01:55:09,203 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=1, progress=1.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f7c015d30>)
+2024-10-09 01:55:11,388 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit EndEvent(failed=False, failed_msg='')
+2024-10-09 01:55:11,388 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - got end event
+2024-10-09 01:55:11,389 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - tracking done.
+2024-10-09 01:55:16,459 - ert.gui.tools.plot.plot_window - MainThread - INFO - PlotWindow __init__
+2024-10-09 01:55:16,518 - ert.gui.tools.plot.plot_window - MainThread - ERROR -  Please report this error and try restarting the application.Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/routing.py", line 269, in app
+    solved_result = await solve_dependencies(
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/dependencies/utils.py", line 602, in solve_dependencies
+    solved = await run_in_threadpool(call, **sub_values)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/ert/dark_storage/enkf.py", line 22, in get_storage
+    return (_storage := open_storage(os.environ["ERT_STORAGE_ENS_PATH"]))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/__init__.py", line 34, in open_storage
+    return LocalStorage(Path(path), Mode(mode))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/local_storage.py", line 114, in __init__
+    raise RuntimeError(
+RuntimeError: Cannot open storage '/home/aaronyf/download/ert/ert-spe3flow/storage' in read-only mode: Storage version 6 is newer than the current version 5, upgrade ERT to continue, or run with a different ENSPATH
+ from url: http://127.0.0.1:51838/experiments.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ert/gui/tools/plot/plot_window.py", line 103, in __init__
+    self._key_definitions = self._api.all_data_type_keys()
+  File "/usr/local/lib/python3.8/dist-packages/ert/gui/tools/plot/plot_api.py", line 93, in all_data_type_keys
+    self._check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/ert/gui/tools/plot/plot_api.py", line 76, in _check_response
+    raise httpx.RequestError(
+httpx.RequestError:  Please report this error and try restarting the application.Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/routing.py", line 269, in app
+    solved_result = await solve_dependencies(
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/dependencies/utils.py", line 602, in solve_dependencies
+    solved = await run_in_threadpool(call, **sub_values)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/ert/dark_storage/enkf.py", line 22, in get_storage
+    return (_storage := open_storage(os.environ["ERT_STORAGE_ENS_PATH"]))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/__init__.py", line 34, in open_storage
+    return LocalStorage(Path(path), Mode(mode))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/local_storage.py", line 114, in __init__
+    raise RuntimeError(
+RuntimeError: Cannot open storage '/home/aaronyf/download/ert/ert-spe3flow/storage' in read-only mode: Storage version 6 is newer than the current version 5, upgrade ERT to continue, or run with a different ENSPATH
+ from url: http://127.0.0.1:51838/experiments.
+2024-10-09 01:55:39,218 - ert.gui.tools.plot.plot_window - MainThread - ERROR -  Please report this error and try restarting the application.Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/routing.py", line 269, in app
+    solved_result = await solve_dependencies(
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/dependencies/utils.py", line 602, in solve_dependencies
+    solved = await run_in_threadpool(call, **sub_values)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/ert/dark_storage/enkf.py", line 22, in get_storage
+    return (_storage := open_storage(os.environ["ERT_STORAGE_ENS_PATH"]))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/__init__.py", line 34, in open_storage
+    return LocalStorage(Path(path), Mode(mode))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/local_storage.py", line 114, in __init__
+    raise RuntimeError(
+RuntimeError: Cannot open storage '/home/aaronyf/download/ert/ert-spe3flow/storage' in read-only mode: Storage version 6 is newer than the current version 5, upgrade ERT to continue, or run with a different ENSPATH
+ from url: http://127.0.0.1:51838/experiments.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/ert/gui/tools/plot/plot_window.py", line 139, in __init__
+    ensembles = self._api.get_all_ensembles()
+  File "/usr/local/lib/python3.8/dist-packages/ert/gui/tools/plot/plot_api.py", line 135, in get_all_ensembles
+    return self._get_all_ensembles()
+  File "/usr/local/lib/python3.8/dist-packages/ert/gui/tools/plot/plot_api.py", line 51, in _get_all_ensembles
+    self._check_response(response)
+  File "/usr/local/lib/python3.8/dist-packages/ert/gui/tools/plot/plot_api.py", line 76, in _check_response
+    raise httpx.RequestError(
+httpx.RequestError:  Please report this error and try restarting the application.Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/middleware/exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/routing.py", line 269, in app
+    solved_result = await solve_dependencies(
+  File "/usr/local/lib/python3.8/dist-packages/fastapi/dependencies/utils.py", line 602, in solve_dependencies
+    solved = await run_in_threadpool(call, **sub_values)
+  File "/usr/local/lib/python3.8/dist-packages/starlette/concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+  File "/usr/local/lib/python3.8/dist-packages/anyio/_backends/_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+  File "/usr/local/lib/python3.8/dist-packages/ert/dark_storage/enkf.py", line 22, in get_storage
+    return (_storage := open_storage(os.environ["ERT_STORAGE_ENS_PATH"]))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/__init__.py", line 34, in open_storage
+    return LocalStorage(Path(path), Mode(mode))
+  File "/usr/local/lib/python3.8/dist-packages/ert/storage/local_storage.py", line 114, in __init__
+    raise RuntimeError(
+RuntimeError: Cannot open storage '/home/aaronyf/download/ert/ert-spe3flow/storage' in read-only mode: Storage version 6 is newer than the current version 5, upgrade ERT to continue, or run with a different ENSPATH
+ from url: http://127.0.0.1:51838/experiments.
+2024-10-09 01:55:40,645 - ert.gui.tools.plot.plot_window - MainThread - INFO - PlotWindow __init__ done. time=24.18654050299847
+2024-10-09 01:56:06,229 - ert.cli.model_factory - MainThread - INFO - Initiating experiment
+2024-10-09 01:56:06,230 - ert.enkf_main - MainThread - INFO - To repeat this experiment, add the following random seed to your config file:
+2024-10-09 01:56:06,230 - ert.enkf_main - MainThread - INFO - RANDOM_SEED 223613922299458732129325875316526130166
+2024-10-09 01:56:10,390 - ert.gui.simulation.queue_emitter - MainThread - DEBUG - init QueueEmitter
+2024-10-09 01:56:10,391 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - tracking...
+2024-10-09 01:56:10,422 - ert.enkf_main - ert_gui_simulation_thread - INFO - To repeat this experiment, add the following random seed to your config file:
+2024-10-09 01:56:10,423 - ert.enkf_main - ert_gui_simulation_thread - INFO - RANDOM_SEED 43691075328537964566577915100825044550
+2024-10-09 01:56:10,423 - ert.config.gen_kw_config - ert_gui_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 0
+2024-10-09 01:56:10,429 - ert.config.gen_kw_config - ert_gui_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 1
+2024-10-09 01:56:10,433 - ert.config.gen_kw_config - ert_gui_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 2
+2024-10-09 01:56:10,439 - ert.config.gen_kw_config - ert_gui_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 3
+2024-10-09 01:56:10,445 - ert.config.gen_kw_config - ert_gui_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 4
+2024-10-09 01:56:10,450 - ert.config.gen_kw_config - ert_gui_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 5
+2024-10-09 01:56:10,457 - ert.config.gen_kw_config - ert_gui_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 6
+2024-10-09 01:56:10,463 - ert.config.gen_kw_config - ert_gui_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 7
+2024-10-09 01:56:10,471 - ert.config.gen_kw_config - ert_gui_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 8
+2024-10-09 01:56:10,478 - ert.config.gen_kw_config - ert_gui_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 9
+2024-10-09 01:56:10,485 - ert.config.gen_kw_config - ert_gui_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 10
+2024-10-09 01:56:10,494 - ert.config.gen_kw_config - ert_gui_simulation_thread - INFO - Sampling parameter FIELD_PROPERTIES for realization 11
+2024-10-09 01:56:10,500 - ert.enkf_main - ert_gui_simulation_thread - DEBUG - sample_prior() time_used 0.0770s
+2024-10-09 01:56:10,557 - ert.enkf_main - ert_gui_simulation_thread - DEBUG - create_run_path() time_used 0.0567s
+2024-10-09 01:56:11,022 - ert.scheduler - LegacyEnsemble - INFO - Experiment ran on ORCHESTRATOR: scheduler on LOCAL queue
+2024-10-09 01:56:11,131 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit FullSnapshotEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.0, indeterminate=False, iteration=0, snapshot=<ert.ensemble_evaluator.snapshot.Snapshot object at 0x7f3f743e64c0>)
+2024-10-09 01:56:11,220 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 0 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0'
+2024-10-09 01:56:11,238 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 1 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-1/iter-0'
+2024-10-09 01:56:11,311 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 2 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-2/iter-0'
+2024-10-09 01:56:11,353 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 3 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-3/iter-0'
+2024-10-09 01:56:12,565 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f743cf6d0>)
+2024-10-09 01:56:12,575 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f743ccbe0>)
+2024-10-09 01:56:18,585 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f743d1040>)
+2024-10-09 01:56:22,593 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.0, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f743d1910>)
+2024-10-09 01:56:24,051 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 3 finished with returncode=0
+2024-10-09 01:56:24,052 - ert.callbacks - LegacyEnsemble - DEBUG - Starting to load response: summary
+2024-10-09 01:56:24,060 - ert.callbacks - LegacyEnsemble - DEBUG - Loaded summary
+2024-10-09 01:56:24,067 - ert.callbacks - LegacyEnsemble - DEBUG - Saved summary to storage
+2024-10-09 01:56:24,069 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 4 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-4/iter-0'
+2024-10-09 01:56:24,600 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.041666666666666664, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f7416fbe0>)
+2024-10-09 01:56:24,695 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 1 finished with returncode=0
+2024-10-09 01:56:24,695 - ert.callbacks - LegacyEnsemble - DEBUG - Starting to load response: summary
+2024-10-09 01:56:24,706 - ert.callbacks - LegacyEnsemble - DEBUG - Loaded summary
+2024-10-09 01:56:24,712 - ert.callbacks - LegacyEnsemble - DEBUG - Saved summary to storage
+2024-10-09 01:56:24,715 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 5 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-5/iter-0'
+2024-10-09 01:56:26,604 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.08333333333333333, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f743e6220>)
+2024-10-09 01:56:28,606 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.08333333333333333, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f743d10a0>)
+2024-10-09 01:56:28,703 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 2 finished with returncode=0
+2024-10-09 01:56:28,703 - ert.callbacks - LegacyEnsemble - DEBUG - Starting to load response: summary
+2024-10-09 01:56:28,714 - ert.callbacks - LegacyEnsemble - DEBUG - Loaded summary
+2024-10-09 01:56:28,726 - ert.callbacks - LegacyEnsemble - DEBUG - Saved summary to storage
+2024-10-09 01:56:28,729 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 6 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-6/iter-0'
+2024-10-09 01:56:30,164 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 0 finished with returncode=0
+2024-10-09 01:56:30,164 - ert.callbacks - LegacyEnsemble - DEBUG - Starting to load response: summary
+2024-10-09 01:56:30,173 - ert.callbacks - LegacyEnsemble - DEBUG - Loaded summary
+2024-10-09 01:56:30,180 - ert.callbacks - LegacyEnsemble - DEBUG - Saved summary to storage
+2024-10-09 01:56:30,182 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 7 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-7/iter-0'
+2024-10-09 01:56:30,614 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.16666666666666666, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f7416fa90>)
+2024-10-09 01:56:32,620 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.16666666666666666, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f74117eb0>)
+2024-10-09 01:56:34,624 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.16666666666666666, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f74173970>)
+2024-10-09 01:56:36,627 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.16666666666666666, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f74120fd0>)
+2024-10-09 01:56:38,902 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.16666666666666666, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f74173c70>)
+2024-10-09 01:56:40,613 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 5 finished with returncode=0
+2024-10-09 01:56:40,615 - ert.callbacks - LegacyEnsemble - DEBUG - Starting to load response: summary
+2024-10-09 01:56:40,628 - ert.callbacks - LegacyEnsemble - DEBUG - Loaded summary
+2024-10-09 01:56:40,637 - ert.callbacks - LegacyEnsemble - DEBUG - Saved summary to storage
+2024-10-09 01:56:40,640 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 8 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-8/iter-0'
+2024-10-09 01:56:40,908 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.20833333333333334, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f743d10a0>)
+2024-10-09 01:56:41,398 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 4 finished with returncode=0
+2024-10-09 01:56:41,399 - ert.callbacks - LegacyEnsemble - DEBUG - Starting to load response: summary
+2024-10-09 01:56:41,415 - ert.callbacks - LegacyEnsemble - DEBUG - Loaded summary
+2024-10-09 01:56:41,422 - ert.callbacks - LegacyEnsemble - DEBUG - Saved summary to storage
+2024-10-09 01:56:41,426 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 9 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-9/iter-0'
+2024-10-09 01:56:42,478 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 6 finished with returncode=0
+2024-10-09 01:56:42,478 - ert.callbacks - LegacyEnsemble - DEBUG - Starting to load response: summary
+2024-10-09 01:56:42,488 - ert.callbacks - LegacyEnsemble - DEBUG - Loaded summary
+2024-10-09 01:56:42,497 - ert.callbacks - LegacyEnsemble - DEBUG - Saved summary to storage
+2024-10-09 01:56:42,498 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 10 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-10/iter-0'
+2024-10-09 01:56:42,920 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.2916666666666667, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f74124850>)
+2024-10-09 01:56:43,730 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 7 finished with returncode=0
+2024-10-09 01:56:43,731 - ert.callbacks - LegacyEnsemble - DEBUG - Starting to load response: summary
+2024-10-09 01:56:43,740 - ert.callbacks - LegacyEnsemble - DEBUG - Loaded summary
+2024-10-09 01:56:43,748 - ert.callbacks - LegacyEnsemble - DEBUG - Saved summary to storage
+2024-10-09 01:56:43,751 - ert.scheduler.local_driver - LegacyEnsemble - DEBUG - Submitting realization 11 as command 'job_dispatch.py /home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-11/iter-0'
+2024-10-09 01:56:44,925 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.3333333333333333, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f7413c460>)
+2024-10-09 01:56:46,921 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.3333333333333333, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f7413c040>)
+2024-10-09 01:56:49,058 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.3333333333333333, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f7413c460>)
+2024-10-09 01:56:51,063 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.3333333333333333, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f7413c070>)
+2024-10-09 01:56:51,491 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 8 finished with returncode=0
+2024-10-09 01:56:51,492 - ert.callbacks - LegacyEnsemble - DEBUG - Starting to load response: summary
+2024-10-09 01:56:51,500 - ert.callbacks - LegacyEnsemble - DEBUG - Loaded summary
+2024-10-09 01:56:51,509 - ert.callbacks - LegacyEnsemble - DEBUG - Saved summary to storage
+2024-10-09 01:56:53,068 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.375, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f74120ee0>)
+2024-10-09 01:56:55,972 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 9 finished with returncode=0
+2024-10-09 01:56:55,972 - ert.callbacks - LegacyEnsemble - DEBUG - Starting to load response: summary
+2024-10-09 01:56:55,980 - ert.callbacks - LegacyEnsemble - DEBUG - Loaded summary
+2024-10-09 01:56:55,987 - ert.callbacks - LegacyEnsemble - DEBUG - Saved summary to storage
+2024-10-09 01:56:56,103 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 10 finished with returncode=0
+2024-10-09 01:56:56,104 - ert.callbacks - LegacyEnsemble - DEBUG - Starting to load response: summary
+2024-10-09 01:56:56,112 - ert.callbacks - LegacyEnsemble - DEBUG - Loaded summary
+2024-10-09 01:56:56,119 - ert.callbacks - LegacyEnsemble - DEBUG - Saved summary to storage
+2024-10-09 01:56:56,169 - ert.scheduler.local_driver - LegacyEnsemble - INFO - Realization 11 finished with returncode=0
+2024-10-09 01:56:56,170 - ert.callbacks - LegacyEnsemble - DEBUG - Starting to load response: summary
+2024-10-09 01:56:56,177 - ert.callbacks - LegacyEnsemble - DEBUG - Loaded summary
+2024-10-09 01:56:56,184 - ert.callbacks - LegacyEnsemble - DEBUG - Saved summary to storage
+2024-10-09 01:56:56,185 - ert.scheduler.local_driver - LegacyEnsemble - INFO - All realization tasks finished
+2024-10-09 01:56:56,186 - ert.scheduler - LegacyEnsemble - INFO - Experiment ran on QUEUESYSTEM: LOCAL
+2024-10-09 01:56:56,916 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.5, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f743c9400>)
+2024-10-09 01:56:56,924 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit SnapshotUpdateEvent(phase_name='Running forecast for iteration: 0', current_phase=0, total_phases=2, progress=0.5, indeterminate=False, iteration=0, partial_snapshot=<ert.ensemble_evaluator.snapshot.PartialSnapshot object at 0x7f3f7416f940>)
+2024-10-09 01:56:58,985 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit RunModelUpdateBeginEvent(iteration=0)
+2024-10-09 01:56:58,985 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit RunModelStatusEvent(iteration=0, msg='Creating posterior ensemble..')
+2024-10-09 01:56:59,006 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit RunModelStatusEvent(iteration=0, msg='Loading observations and responses..')
+2024-10-09 01:56:59,085 - ert.analysis._es_update - ert_gui_simulation_thread - WARNING - Deactivating observation: WOPT_2016
+2024-10-09 01:56:59,086 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit RunModelErrorEvent(iteration=0, smoother_snapshot=SmootherSnapshot(source_ensemble_name='2024-10-09T0147_0', target_ensemble_name='2024-10-09T0147_1', alpha=3.0, std_cutoff=1e-06, global_scaling=1.0, update_step_snapshots=[ObservationAndResponseSnapshot(obs_name='WOPT_2016', obs_val=26.8, obs_std=0.5, obs_scaling=1.0, response_mean=368652.34375, response_std=0.0, response_mean_mask=False, response_std_mask=False)]), error_msg='No active observations for update step')
+2024-10-09 01:56:59,090 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - emit EndEvent(failed=True, failed_msg='Analysis of experiment failed with the following error: No active observations for update step\n')
+2024-10-09 01:56:59,091 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - got end event
+2024-10-09 01:56:59,091 - ert.gui.simulation.queue_emitter - Dummy-2 - DEBUG - tracking done.
+2024-10-09 01:57:09,397 - root - MainThread - DEBUG - Resetting environment variable ERT_SITE_CONFIG
+2024-10-09 01:57:09,397 - root - MainThread - DEBUG - Deleting temporary directory for site-config
+2024-10-09 01:57:09,398 - root - MainThread - INFO - Peak memory use: 379024 kB
