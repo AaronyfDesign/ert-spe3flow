@@ -62,12 +62,12 @@
             "max_arg": null
         }
     ],
-    "run_id": "ececbe1c-32e3-4b0e-9383-44997d2e6a11",
-    "ert_pid": "21133",
-    "ens_id": "3d2883aa",
+    "run_id": "eddf85de-4d28-418b-b78c-594e6f2499b6",
+    "ert_pid": "5304",
+    "ens_id": "c6878996",
     "real_id": 0,
-    "dispatch_url": "wss://192.168.159.128:49374/dispatch",
-    "ee_token": "WqccujqU5P2RdquE/moPWw2kXUUqs7NIltBGkuLsCiVZZduD9KkBWKgr8AldQ/SV/Paxl6uxLUfNgC6vkeFqp9s3jaHh97Jh9sEtF3PdcqrGm+8aiIcS2a9Ra9XMwobk9hCpz1NZQKM9m6n9vyzJPs2UEcw8VICNxbFhjRn1jhc=",
+    "dispatch_url": "wss://192.168.159.128:50068/dispatch",
+    "ee_token": "dHdpmpn43p/CgK+cA1y016P8crr5gsKnxPc1I6VJ+/I2VLi7nQadqwfp/xhhPKEfmtceqHJUovnt9vDypGdF9tzdLiNHsxuSXZyc/y+xGi1jDwIlpalQ72vuCmJQtS6WEbAkhJbb+0j8swHoj7oxK5OHjL5H7g4KqIunyXGppv8=",
     "ee_cert_path": "/home/aaronyf/download/ert/ert-spe3flow/spe3_out/realization-0/iter-0/.ee.pem",
     "experiment_id": null
 }

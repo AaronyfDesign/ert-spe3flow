@@ -11,14 +11,14 @@ Flow is a simulator for fully implicit three-phase black-oil flow, and is part o
 For more information visit: https://opm-project.org 
 
 Flow Version     =  2023.10 (lsb_release -d | sed s/.*:s+(.*)/1/: 2023.10-rfinal-1~focal)
-Machine name     =  aaronyf-VirtualBox (Number of logical cores: 2, Memory size: 7901.38 MB) 
+Machine name     =  aaronyf-VirtualBox (Number of logical cores: 2, Memory size: 7901.37 MB) 
 Operating system =  Linux x86_64 (Kernel: 5.15.0-121-generic, #131~20.04.1-Ubuntu SMP Mon Aug 12 13:09:56 UTC 2024 )
 Build time       =  
 User             =  aaronyf
-Simulation started on 09-10-2024 at 02:21:02 hrs
+Simulation started on 10-10-2024 at 04:49:09 hrs
 Parameters used by Flow:
 # [known parameters which were specified at run-time]
-EclDeckFileName="./resources/SPE3.DATA.jinja2" # default: ""
+EclDeckFileName="../ert-spe3flow/resources/SPE3.DATA.jinja2" # default: ""
 # [parameters which were specified at compile-time]
 AcceleratorMode="none"
 AllowDistributedWells="0"
@@ -226,39 +226,42 @@ WaterOnlyThreshold="1"
 ZoltanImbalanceTol="1.1"
 ZoltanParams="graph"
 
-Reading deck file './resources/SPE3.DATA.jinja2'
-    0 Reading RUNSPEC  in resources/SPE3.DATA.jinja2 line 18
-    1 Reading TITLE    in resources/SPE3.DATA.jinja2 line 21
-    2 Reading DIMENS   in resources/SPE3.DATA.jinja2 line 23
-    3 Reading OIL      in resources/SPE3.DATA.jinja2 line 25
-    4 Reading GAS      in resources/SPE3.DATA.jinja2 line 26
-    5 Reading WATER    in resources/SPE3.DATA.jinja2 line 27
-    6 Reading VAPOIL   in resources/SPE3.DATA.jinja2 line 28
-    7 Reading DISGAS   in resources/SPE3.DATA.jinja2 line 29
-    8 Reading FIELD    in resources/SPE3.DATA.jinja2 line 31
-    9 Reading START    in resources/SPE3.DATA.jinja2 line 33
-   10 Reading WELLDIMS in resources/SPE3.DATA.jinja2 line 36
-   11 Reading TABDIMS  in resources/SPE3.DATA.jinja2 line 47
-   12 Reading EQLDIMS  in resources/SPE3.DATA.jinja2 line 52
-   13 Reading UNIFOUT  in resources/SPE3.DATA.jinja2 line 56
-   14 Reading GRID     in resources/SPE3.DATA.jinja2 line 58
-   15 Reading INIT     in resources/SPE3.DATA.jinja2 line 65
-   16 Reading NOECHO   in resources/SPE3.DATA.jinja2 line 70
-   17 Reading DX       in resources/SPE3.DATA.jinja2 line 71
-   18 Reading DY       in resources/SPE3.DATA.jinja2 line 74
-   19 Reading DZ       in resources/SPE3.DATA.jinja2 line 77
-   20 Reading TOPS     in resources/SPE3.DATA.jinja2 line 82
+Reading deck file '../ert-spe3flow/resources/SPE3.DATA.jinja2'
+    0 Reading RUNSPEC  in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 18
+    1 Reading TITLE    in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 21
+    2 Reading DIMENS   in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 23
+    3 Reading OIL      in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 25
+    4 Reading GAS      in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 26
+    5 Reading WATER    in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 27
+    6 Reading VAPOIL   in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 28
+    7 Reading DISGAS   in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 29
+    8 Reading FIELD    in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 31
+    9 Reading START    in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 33
+   10 Reading WELLDIMS in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 36
+   11 Reading TABDIMS  in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 47
+   12 Reading EQLDIMS  in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 52
+   13 Reading UNIFOUT  in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 56
+   14 Reading GRID     in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 58
+   15 Reading INIT     in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 65
+   16 Reading NOECHO   in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 70
+   17 Reading DX       in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 71
+   18 Reading DY       in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 74
+   19 Reading DZ       in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 77
+   20 Reading TOPS     in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 82
+   21 Reading PORO     in ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 91
 
-Error: Unknown keyword: POROSITY
+Error: Problem with keyword PORO
+In ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 91.
+Malformed floating point number '{{parameters.FIELD_PROPERTIES.POROSITY}}'
 
-Error: Unrecoverable errors while loading input: Problem with keyword POROSITY
-In /home/aaronyf/download/ert/ert-spe3flow/resources/field_properties_priors line 1
-Unknown keyword: POROSITY
+Error: Unrecoverable errors while loading input: Problem with keyword PORO
+In ../ert-spe3flow/resources/SPE3.DATA.jinja2 line 91.
+Malformed floating point number '{{parameters.FIELD_PROPERTIES.POROSITY}}'
 
 
 Error summary:
 Warnings          0
-Info              22
+Info              23
 Errors            2
 Bugs              0
 Debug             0

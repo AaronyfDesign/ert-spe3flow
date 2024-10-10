@@ -1,5 +1,0 @@
-default_version: default
-versions:
-  default:
-    scalar:
-      executable: /usr/bin/flow

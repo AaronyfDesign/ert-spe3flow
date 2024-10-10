@@ -1,29 +1,29 @@
 {
-    "run_id": "697c1fe4-8f6f-4a52-a204-7c75f52fcfff",
-    "start_time": 1728410190.0,
-    "end_time": 1728410203.0,
+    "run_id": "eddf85de-4d28-418b-b78c-594e6f2499b6",
+    "start_time": 1728506464.0,
+    "end_time": 1728506474.0,
     "jobs": [
         {
             "name": "TEMPLATE_RENDER",
             "status": "Success",
             "error": null,
-            "start_time": 1728410190.0,
-            "end_time": 1728410191.0,
+            "start_time": 1728506464.0,
+            "end_time": 1728506465.0,
             "stdout": "TEMPLATE_RENDER.stdout.0",
             "stderr": "TEMPLATE_RENDER.stderr.0",
-            "current_memory_usage": 8192,
-            "max_memory_usage": 8192
+            "current_memory_usage": 6238208,
+            "max_memory_usage": 6238208
         },
         {
             "name": "FLOW",
             "status": "Success",
             "error": null,
-            "start_time": 1728410192.0,
-            "end_time": 1728410203.0,
+            "start_time": 1728506465.0,
+            "end_time": 1728506474.0,
             "stdout": "FLOW.stdout.1",
             "stderr": "FLOW.stderr.1",
-            "current_memory_usage": 136523776,
-            "max_memory_usage": 136523776
+            "current_memory_usage": 136663040,
+            "max_memory_usage": 136663040
         }
     ]
 }

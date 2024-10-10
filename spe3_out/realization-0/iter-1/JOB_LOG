@@ -1,0 +1,2 @@
+04:41:32  Calling: /usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/templating/script/template_render.py -i parameters.json -o SPE3.DATA -t /home/aaronyf/download/ert/ert-spe3flow/resources/SPE3.DATA.jinja2
+04:41:33  Calling: /usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/script/flow.py SPE3 -v default -n 1 

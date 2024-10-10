@@ -84,16 +84,20 @@ TOPS
 --	81*7315 81*7345 81*7375 81*7425 /
 	81*7315 /	
 
+--INCLUDE
+--    field_properties_priors /
+--ENDINC
+
 PORO
 -- Constant porosity of 0.3 throughout all 324 grid cells
-   	324*0.13 /
---  324*0.6077775146574025 /
+-- 	324*0.13 /
+  324*0.12558346738958945 /
 
 PERMX
 -- The layers have horizontal (meaning x- and y-direction) permeability 
 -- of 130mD, 40mD, 20mD and 150, respectively, from top to bottom layer.
-  	81*130 81*40 81*20 81*150 /
---  81*130 81*59.08363012335829 82*57.99028780505739 81*150 /
+--	81*130 81*40 81*20 81*150 /
+    81*130 81*73.24445667943152 81*10.296940821436026 81*150 /
 
 PERMY
 	81*130 81*40 81*20 81*150 /

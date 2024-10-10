@@ -1,4 +1,2 @@
-01:37:16  Calling: /home/aaronyf/download/ert/dev_ert/lib/python3.8/site-packages/ert/resources/forward-models/templating/script/template_render.py -i parameters.json -o SPE3.DATA -t /home/aaronyf/download/ert/ert-spe3flow/resources/SPE3.DATA.jinja2
-01:37:17  Calling: /home/aaronyf/download/ert/dev_ert/lib/python3.8/site-packages/ert/resources/forward-models/res/script/flow.py SPE3 -v default -n 1 
-01:56:11  Calling: /usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/templating/script/template_render.py -i parameters.json -o SPE3.DATA -t /home/aaronyf/download/ert/ert-spe3flow/resources/SPE3.DATA.jinja2
-01:56:11  Calling: /usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/script/flow.py SPE3 -v default -n 1 
+04:40:53  Calling: /usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/templating/script/template_render.py -i parameters.json -o SPE3.DATA -t /home/aaronyf/download/ert/ert-spe3flow/resources/SPE3.DATA.jinja2
+04:40:54  Calling: /usr/local/lib/python3.8/dist-packages/ert/shared/share/ert/forward-models/res/script/flow.py SPE3 -v default -n 1 

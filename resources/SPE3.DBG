@@ -15,7 +15,7 @@ Machine name     =  aaronyf-VirtualBox (Number of logical cores: 2, Memory size:
 Operating system =  Linux x86_64 (Kernel: 5.15.0-121-generic, #131~20.04.1-Ubuntu SMP Mon Aug 12 13:09:56 UTC 2024 )
 Build time       =  
 User             =  aaronyf
-Simulation started on 09-10-2024 at 02:07:19 hrs
+Simulation started on 09-10-2024 at 04:37:48 hrs
 Parameters used by Flow:
 # [known parameters which were specified at run-time]
 EclDeckFileName="./resources/SPE3.DATA" # default: ""

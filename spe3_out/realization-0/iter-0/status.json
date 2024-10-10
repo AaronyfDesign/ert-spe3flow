@@ -1,29 +1,29 @@
 {
-    "run_id": "ececbe1c-32e3-4b0e-9383-44997d2e6a11",
-    "start_time": 1728413023.0,
-    "end_time": null,
+    "run_id": "eddf85de-4d28-418b-b78c-594e6f2499b6",
+    "start_time": 1728506453.0,
+    "end_time": 1728506462.0,
     "jobs": [
         {
             "name": "TEMPLATE_RENDER",
             "status": "Success",
             "error": null,
-            "start_time": 1728413023.0,
-            "end_time": 1728413023.0,
+            "start_time": 1728506453.0,
+            "end_time": 1728506453.0,
             "stdout": "TEMPLATE_RENDER.stdout.0",
             "stderr": "TEMPLATE_RENDER.stderr.0",
-            "current_memory_usage": 598016,
-            "max_memory_usage": 598016
+            "current_memory_usage": 5013504,
+            "max_memory_usage": 5013504
         },
         {
             "name": "FLOW",
-            "status": "Failure",
-            "error": "Process exited with status code 1",
-            "start_time": 1728413023.0,
-            "end_time": 1728413023.0,
+            "status": "Success",
+            "error": null,
+            "start_time": 1728506453.0,
+            "end_time": 1728506462.0,
             "stdout": "FLOW.stdout.1",
             "stderr": "FLOW.stderr.1",
-            "current_memory_usage": 598016,
-            "max_memory_usage": 598016
+            "current_memory_usage": 135708672,
+            "max_memory_usage": 135708672
         }
     ]
 }
